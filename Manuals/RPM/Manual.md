@@ -2,102 +2,120 @@
 
 <!-- TOC -->
 
-- [A: Overview](#a-overview)
+- [1 Overview](#1-overview)
 
-- [B: Manual for users](#b-manual-for-users)
-	- [1 Data Structure Manager](#1-data-structure-manager)
-		- [1.1 Create Data Structure](#11-create-data-structure)
-		- [1.2 Add Variables](#12-add-variables)
-		- [1.3 Create a copy of a Data Structure](#13-create-a-copy-of-a-data-structure)
-		- [1.4 Download an Excel template](#14-download-an-excel-template)
-	- [2 Manage Data Type](#2-manage-data-type)
-	- [3 Manage Units](#3-manage-units)
-	- [4 Manage Variable Templates](#4-manage-variable-templates)
+- [2 Data Structure](#2-data-structure)
+	- [2.1 Create a Data Structure](#21-create-a-data-structure)
+	- [2.2 Edit a Data Structure](#22-edit-a-data-structure)
+	- [2.3 Create a copy of a Data Structure](#23-create-a-copy-of-a-data-structure)
+	- [2.4 Download an Excel template](#24-download-an-excel-template)
+	- [2.5 Work with an Excel template](25-work-with-an-excel-template)
+- [3 Variable Templates](#3-variable-templates)
+	- [3.1 Data Types](#31-data-types)
+	- [3.2 Units](#32-units)
+	- [3.2 Create a Variable Template](#33-create-a-variable-template)
 
-- [C: Manual for administrators](#c-manual-for-administrators)
-	- [1 Default placeholder for missing values](#1-default-placeholder-for-missing-values)
-	- [2 Seed data definition](#2-seed-data-definition)
+
 
 
 <!-- /TOC -->
 
-## A: Overview
+## 1 Overview
 
-In BEXIS2 data is stored and managed as part of a dataset. A dataset may be anything from a single record up to a collection of millions of records and multiple variables. Each dataset may have an individual structure given by the number of variables and their properties. It is up to the user or the data manager of a project to define such *Data Structures*. 
+In BEXIS2 data is stored and managed as part of a **dataset**. You can think of a Dataset as a container for the (primary) data on the one hand and the metadata on the other. 
 
-The module was formerly called "Data Planning" since it is good practice to specify the Data Structure before collecting your data in the field or the laboratory. Your data can only be uploaded to the system if there is a corresponding Data Structure already existing.
+![image](https://user-images.githubusercontent.com/68608907/232004312-0192043f-03be-4b11-b8bf-01e935f9f40b.png)
 
-A Data Structure contains one or more Variables. Each Variable is defined by its Data Type, a Unit, and a unique name and optional identifier for missing values. So defining Data Types and Units would be the first step, if they are not available yet.
+* **Metadata**: describes the dataset, e.g. who created the dataset and when
+* **(Primary) Data**: can be files or tabular data
+* **File**: unstructured data, e.g. an audio file or image
+* **Tabular Data**: structured data; supported formats are Excel and ASCII
+* **Data Structure**: describes the structure of the data
+ 
+The Data Structure of a File is its technical format. 
+The Data Structure of Tabular Data are its **Variables**. Each Variable is a specific instance of a variable template, which is defined by its Data Type, Unit and unique name. 
 
-![Main Menu](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/main_menu.png) 
+If you want to upload tabular data to the system, there must be a corresponding data structure.
 
-The system encourages reuse of Variables, as well as Data Types and Units. For example, there should be only one Variable (i.e. Variable Template) for temperature values with a Data type of "float" and measured in degree Celsius (i.e. unit). All datasets containing such temperature measurements should use this Variable Template in their data structure. The advantage of such reuse is not only to avoid redundancy (e.g. different names for the same thing) but is foremost to enable the integration of identical variables across different datasets for large synthesis tasks later on.
+## 2 Data Structure
 
+The **Data Structure Manager** is a tool to create, modify and delete Data Structures. Data Structures contain Variables, which are specific instances of Variable Templates. A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. 
 
-## B: Manual for users
-## 1 Data Structure Manager
+![image](https://user-images.githubusercontent.com/68608907/232013885-99b17aed-9d5d-4143-b3f4-921e7b86f240.png)
 
-The *Data Structure Manager* is a tool to create, modify and delete Data Structures. Data Structures contain Variables, which are specific instances of Variable Templates. For example, only one Variable Template "Count" is needed to build a Data Structure of multiple similar variables where only the name (e.g. species name) is different. Each Variable uses the same Variable Template (e.g. instances of Count).
+### 2.1 Create a Data Structure
 
-It is possible to create Data Structures for Tabular (structured) data such as Excel tables, CSV-Files, etc. and for Files such as images, videos, etc.
-
-#### 1.1 Create Data Structure
-
-Click on Create Data Structure from *Plan > Manage Data Structures*, and then select the Tabular or File option. Fill the fields and click on the Save button. A name for a data structure is required.
+Click on Create Data Structure from *Plan > Manage Data Structures*, and then select the Tabular option. Enter a name and a description and click on the Save button. 
 
 ![Create Datastructure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_data_structure.png) 
 
-If a data structure is not already in use by a dataset, by clicking on the edit button you can edit it. In addition to editing the name and description, in the case of Tabular, you can edit also variables.
+BEXIS2 will now refer you to the page where you can build your data structure by adding variables.
 
-Delete a data structure is possible through editing.
+![Add Variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/add_variables.png)
+Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR.
 
-Download button helps you to download an Excel template.
+When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific. 
 
-There is also possible to make a copy from a data structure by clicking on the copy button.
+You can change the order of the variables by dragging and dropping them. 
 
-#### 1.2 Add Variables
+Click on the trash icon to delete the variable from your structure.
 
-In the case of Tabular, a data structure usually contains variables. Variables are defined before as Variable Templates. If a data structure is in use, you are not able to add or remove variables.
+If the *Optional* checkbox is selected, the variable/column of your tabular data can have empty entries.
 
-![Add Variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/add_variables.png) 
-
-After adding variables, you can rearrange the order of variables by dragging and dropping them. You may also delete variables from the list.
-
-*Please note, that the order cannot be changed anymore once a dataset is using this data structure.* 
-
-You can define the requirement for each variable. *Optional* means that this variable can have empty entries. You can also define the used placeholder for missing values. Their might be one by default, but you can adjust it and add more.
+You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.
 
 ![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
 
-#### 1.3 Create a copy of a Data Structure
+### 2.2 Edit a Data Structure
 
-You can create a copy of a data structure, either it is Tabular or File (formerly structured vs. unstructured), by clicking on the _Save as_ button. In that window, the Name is filled with the original one and you need to fill it with a new one.
+**A Data Structure cannot be changed anymore (or deleted) once it is linked to a dataset!!!**
+
+### 2.3 Create a copy of a Data Structure
+
+You can create a copy of a data structure, whether it is Tabular or File (structured or unstructured), by clicking on the _Save as_ button. Just change the name of the copy.
 
 ![Copy Data Structure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/copy_data_structure.png) 
 
-#### 1.4 Download an Excel template
+### 2.4 Download an Excel template
 
-By clicking on the Download button system create an Excel template from the current data structure, which is used when you want to upload data to a dataset (refer to data collection user guide for more details). Save this template on your computer and open it to fill by your data.
+You can download a Data Structure as Excel template in two ways:
 
-As you open this template, you have to enable macros for it. Macros automate frequently-used tasks. Depending on what Microsoft version you use, enable or disable macros is a bit different. But, Macro security settings are generally located in the Trust Center.
+1) On the page Data Structure management, click on the Download button next to a Data Structure.
+2) On the Edit Data Structure page, click the Download Excel Template button. BEXIS 2 creates an Excel Template from the current Data Structure.
 
-Normally, when you open a template file, you have a security warning, that says macros have been disabled. You can click on the Options button and enable this content.
+Save the Excel Template to your preferred location on your computer.
+
+### 2.5 Work with an Excel template
+An Excel template is an Excel file that contains all the information about its underlying Data Structure. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
+
+Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, choose the option "Enable content". 
+Macro security settings are generally located in the Trust Center.
 
 ![Enable Macro](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/Help_img6.png) 
 
-### 2 Manage Data Type
+## 3 Variable Templates
+If there is not yet a variable template, that fits to your variable, you can create a new variable template yourself.
 
-With the Data Type Manager you are able to create, modify and delete Data Types. They are required to specify Variable Templates.
+A variable template has a unique name, a data type, and a unit.
 
-To create a Data Type, click on the Create Data Type button. Fill the fields, select a system type and click on the Save button. The Data Type is stored if all information are correct and it is not a duplicate.
+### 3.1 Data Types
 
-Use ![img8](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) for edit and ![img9](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) for delete a data type.
+A data type is an attribute associated with a piece of data that tells a computer system how to interpret its value. 
 
-In a typical project scenario, the responsible data(base) manager would have created the most common Data Types and Units.
+You can choose one of the following data types:
+	
+Name	      	| Description 	| Example
+------------- 	| ------------- | -----------
+Boolean		| boolean value	| true, false, 0, 1
+Date		| YYYY-MM-DD	| 2023-06-12
+DateTime	| YYYY-MM-DDThh:mm:ss; stores an instant in time expressed as a calendar date and time of day; its precision can range from a year to a fraction of a second.	      | 2015-05-12T13:20:05, 2022-08-24
+Decimal		| stores real numbers like double, but with higher precision | 	7, 38.787, -24.666	|
+Double		| stores real numbers | 12.6, 123.89999, -34.98, 9		|	
+Integer		| stores whole numbers | -12, 0, 34567, 120		|
+String		| sequence of characters | "one", "Turdus merula", "Horchbox", "13"
+Time		| hh:mm:ss	| 12:39:46
 
-![Create Data Type](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_data_type.png) 
-
-### 3 Manage Units
+### 3.2 Units
 
 With the Unit Manager you are able to create, modify and delete Units. Units may be required to define Variable Templates.
 
@@ -109,7 +127,8 @@ Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/e
 
 ![Create Unit](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_unit.png) 
 
-### 4 Manage Variable Templates
+
+### 3.3 Create a Variable Template
 
 With the Variable Template Manager you are able to create, modify and delete Variable Templates (called Data Attributes in older BEXIS2 versions). Variables are required to create Data Structures.
 
@@ -127,43 +146,10 @@ It is possible to put constraints on Variable Templates, to add constraints clic
 *   Negation: The inversion of the chosen constraint will apply. In fact the result of the constraint is XORed with the negation field. For example, a negated Range Constraint of Min=1 and Max=100 will allow all values outside of this range.
 
 
-## C: Manual for administrators
 
-### 1 Default placeholder for missing values
 
-Under *Workspace/RPM/rpm.settings.xml* one or more default placeholder for missing values can be defined.
 
-```XML
-<?xml version="1.0" encoding="utf-8"?>
-<settings>
-...
-  <missingValues>
-    <missingValue>
-      <placeholder>na</placeholder>
-      <description>not available</description>
-    </missingValue>
-  </missingValues>
-</settings>
-```
-### 2 Seed data definition
 
-Under *Workspace/RPM/* several text files can be located to create seed data for attributes, datatypes, dimensions and units. 
 
-*attributes.csv*
-```
-Name;ShortName;Description;IsMultipleValue;IsBuiltIn;Owner;ContainerType;MeasurementScale;EntitySelectionPredicate;Self;DataType;Unit;Methodology;Constraints;ExtendedProperties;GlobalizationInfos;AggregateFunctions;REMARK
-```
-*datatypes.csv*
-```
-Name;Description;System Type;Display Pattern
-```
-*dimensions.csv*
-```
-id;name;syntax;description
-```
-*units*
-```
-Name;Abbreviation;Description;DimensionName;Measurement System;Data Types;used by;conversion to SI;remark
-```
 
-[Go to top](#a-overview)
+[Go to top](#1-overview)
