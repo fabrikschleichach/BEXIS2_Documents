@@ -87,7 +87,7 @@ You can download a Data Structure as Excel template in two ways:
 Save the Excel Template to your preferred location on your computer.
 
 ### 2.5 Work with an Excel template
-An Excel template is an Excel file that contains all the information about its underlying Data Structure. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
+An Excel template is an Excel file that includes all the information about its underlying Data Structure. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
 
 Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, choose the option "Enable content". 
 Macro security settings are generally located in the Trust Center.
@@ -95,9 +95,14 @@ Macro security settings are generally located in the Trust Center.
 ![Enable Macro](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/Help_img6.png) 
 
 ## 3 Variable Templates
-If there is not yet a variable template, that fits to your variable, you can create a new variable template yourself.
 
-A variable template has a unique name, a data type, and a unit.
+You can think of a Variable Template as a construction plan for a variable. It defines the data type and unit of a variable. 
+
+The idea of Variable Templates is to **support reusability**: You don`t have to define the data type or unit of a variable every time you use it in your tabular data. Instead, you can pick an existing variable template and modify its properties according to your needs. This way, you also **improve data quality**, since similar things are defined to be similar, and thus can be more easily related to each other.
+
+
+
+
 
 ### 3.1 Data Types
 
@@ -133,6 +138,7 @@ Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/e
 
 ### 3.3 Create a Variable Template
 
+If there is not yet a variable template, that fits to your variable, you can create a new variable template.
 With the Variable Template Manager you are able to create, modify and delete Variable Templates (called Data Attributes in older BEXIS2 versions). Variables are required to create Data Structures.
 
 To create a Variable Template, click on the Create Variable Template button. Fill the fields. Select an associated Unit and Data Type and click on the Save button. The Variable Template is stored if all information are correct and it is not a duplicate.
