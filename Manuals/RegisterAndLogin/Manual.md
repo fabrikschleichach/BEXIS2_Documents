@@ -36,7 +36,7 @@ Please fill in at least the following fields:
 * Email
 * ORCID (To get an ORCID identifier, go to https://orcid.org/register) 
 
-This information will be used for the metadata. If you specify it here, you will not have to fill in the corresponding fields in the metadata form every time you create a new dataset.
+This information will be used for the metadata. If you enter it here, you will not have to fill in the corresponding fields in the metadata form every time you create a new dataset.
 
 Finish your registration by clicking on the "Save" button. You will receive an email from your data manager (betafor@uni-wuerzburg.de) to inform you about your registration process's completeness.
 
