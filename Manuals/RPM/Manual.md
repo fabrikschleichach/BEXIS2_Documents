@@ -22,7 +22,7 @@
 
 ## 1 Overview
 
-In BEXIS2 data is stored and managed as part of a **dataset**. You can think of a Dataset as a container for the (primary) data on the one hand and the metadata on the other. 
+In BEXIS2, data is stored and managed as part of a **dataset**. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other. 
 
 ![image](https://user-images.githubusercontent.com/68608907/232004312-0192043f-03be-4b11-b8bf-01e935f9f40b.png)
 
@@ -33,13 +33,14 @@ In BEXIS2 data is stored and managed as part of a **dataset**. You can think of 
 * **Data Structure**: describes the structure of the data
  
 The Data Structure of a File is its technical format. 
+
 The Data Structure of Tabular Data are its **Variables**. Each Variable is a specific instance of a variable template, which is defined by its Data Type, Unit and unique name. 
 
 If you want to upload tabular data to the system, there must be a corresponding data structure.
 
 ## 2 Data Structure
 
-The **Data Structure Manager** is a tool to create, modify and delete Data Structures. Data Structures contain Variables, which are specific instances of Variable Templates. A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. 
+Data Structures contain Variables, which are specific instances of Variable Templates. A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. For every column of your tabular data you have to define a variable. 
 
 ![image](https://user-images.githubusercontent.com/68608907/232013885-99b17aed-9d5d-4143-b3f4-921e7b86f240.png)
 
@@ -58,7 +59,7 @@ When you click the arrow button next to a variable template, the variable will b
 
 You can change the order of the variables by dragging and dropping them. 
 
-Click on the trash icon to delete the variable from your structure.
+A variable can be deleted from a structure by clicking on the trash button.
 
 If the *Optional* checkbox is selected, the variable/column of your tabular data can have empty entries.
 
@@ -109,7 +110,7 @@ Name	      	| Description 	| Example
 Boolean		| boolean value	| true, false, 0, 1
 Date		| YYYY-MM-DD	| 2023-06-12
 DateTime	| YYYY-MM-DDThh:mm:ss; stores an instant in time expressed as a calendar date and time of day; its precision can range from a year to a fraction of a second.	      | 2015-05-12T13:20:05, 2022-08-24
-Decimal		| stores real numbers like double, but with higher precision | 	7, 38.787, -24.666	|
+Decimal		| stores real numbers like Double, but with higher precision | 	7, 38.787, -24.666	|
 Double		| stores real numbers | 12.6, 123.89999, -34.98, 9		|	
 Integer		| stores whole numbers | -12, 0, 34567, 120		|
 String		| sequence of characters | "one", "Turdus merula", "Horchbox", "13"
@@ -117,13 +118,15 @@ Time		| hh:mm:ss	| 12:39:46
 
 ### 3.2 Units
 
-With the Unit Manager you are able to create, modify and delete Units. Units may be required to define Variable Templates.
+With the Unit Manager you are able to create, modify and delete Units. 
 
-To create a Unit, click on the Create Unit button. Fill the fields, select a Measurement System and create or select a Dimension. To create a Dimension enter a Name in the Dimension Name field and edit the Dimension Specification in the pattern "L(0,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)". For more information about Dimendion click [here](https://translate.google.de/translate?sl=de&tl=en&js=y&prev=_t&hl=de&ie=UTF-8&u=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FDimension_%28Gr%25C3%25B6%25C3%259Fensystem%29&edit-text=). For example, a Unit of meter per second (m/s) would represented as "L(1,0)M(0,0)T(0,1)I(0,0)Θ(0,0)N(0,0)J(0,0)".
+If the Unit you require is not yet part of the unit list, you can create it by clicking on the Create Unit button. Fill the fields, select a Measurement System and select or create a Dimension. To create a Dimension enter a Name in the Dimension Name field and edit the Dimension Specification pattern "L(0,0)M(0,0)T(0,0)I(0,0)Θ(0,0)N(0,0)J(0,0)". For more information about Dimension click [here](https://translate.google.de/translate?sl=de&tl=en&js=y&prev=_t&hl=de&ie=UTF-8&u=https%3A%2F%2Fde.wikipedia.org%2Fwiki%2FDimension_%28Gr%25C3%25B6%25C3%259Fensystem%29&edit-text=). For example, a Unit "meter per second" (m/s) would be represented as "L(1,0)M(0,0)T(0,1)I(0,0)Θ(0,0)N(0,0)J(0,0)".
 
-For a Unit, you could define one or more data types associated with it. By clicking on the Save button, the Unit is stored if all information is correct and it is not a duplicate.
+Select at least one Data Type from the list.
 
-Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) for edit and ![img13](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) for delete a Unit.
+Click on the Save button and the Unit is stored if all information is correct and it is not a duplicate.
+
+Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) to edit and ![img13](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) to delete a Unit.
 
 ![Create Unit](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_unit.png) 
 
