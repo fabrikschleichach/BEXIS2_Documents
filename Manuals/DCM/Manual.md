@@ -4,10 +4,9 @@
 <!-- TOC -->
 
 - [Data Collection: Metadata and Data](#data-collection-metadata-and-data)
-	- [A: Overview](#a-overview)
-	- [B: Manual for users](#b-manual-for-users)
-		- [1 Create Dataset](#1-create-dataset)
-				- [Copy an existing Dataset](#copy-an-existing-dataset)
+	- [1 Overview](#1-overview)
+	- [2 Create Dataset](#2-create-dataset)
+	- [Copy an existing Dataset](#copy-an-existing-dataset)
 			- [1.1 Metadata](#11-metadata)
 			- [1.2 Dataset links](#12-dataset-links)
 				- [Link via Metadata](#link-via-metadata)
@@ -38,18 +37,41 @@
 
 <!-- /TOC -->
 
-## A: Overview
+## 1: Overview
 
-The *Data Collection Module* provides tools to create new datasets consisting of metadata and data. The metadata is based on a schema defined by a metadata structure. The primary data can be tabular (structured) or files. They are described by a data structure which either describes the variables and units of tabular data or the type of files. The module provides functions and workflows to create new metadata and upload files or import tabular data. 
+In BEXIS2, data is stored and managed as part of a dataset. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other.
 
-## B: Manual for users
-### 1 Create Dataset
+![grafik](https://user-images.githubusercontent.com/68608907/233026141-c3e39d31-be31-46c5-924b-18d11406d5d7.png)
 
-This wizard will assist you in creating a new dataset in BEXIS2. The Wizard is very flexible and builds up differently depending on the selected Metadata structure. Therefore, we describe only the basic functions here.
+* **Metadata**: describing facts about the dataset, e.g. who created the dataset and when
+* **(Primary) Data**: can be files or tabular data
+* **File**: unstructured data, e.g. an audio file or image
+* **Tabular Data**: structured data; supported formats are Excel and ASCII
+* **Data Structure**: describes the structure of the data
 
-The first step is to generate an empty or a copy of an existing dataset based on your selection of the two mandatory elements: Data Structure, and Metadata Structure.
+You can upload a file or tabular data to the system in three steps:
+1. [Create a Dataset](#2-create-dataset) as Container for your data
+2. Describe your data by filling in the Metadata form
+3. Upload your data
 
-![Create Dataset](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Create_Dataset.png) 
+
+## 2 Create Dataset
+
+Select the Collect menu and click on Create Dataset. 
+
+![CreateDataset](https://user-images.githubusercontent.com/68608907/233044507-d88d6393-2693-4841-ac2b-91f76962f3c5.PNG)
+
+You can either create a new Dataset or select an existing one to copy its metadata.  
+
+![NewDataset](https://user-images.githubusercontent.com/68608907/233046860-ba247d11-0149-4c0a-9e61-6b5079e15885.PNG)
+
+Select a Data Structure which fits to your data.
+
+Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it now (check the "Create a Data Structure"-Manual).
+
+![grafik](https://user-images.githubusercontent.com/68608907/233047930-2b1cf861-6269-428b-9f2f-3ad3afdd29ae.png)
+
+
 
 The next stage is determined by the selected metadata structure.
 
