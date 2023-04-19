@@ -1,4 +1,4 @@
-# Data Plannig / Description
+# Data Structure and Variable Templates
 
 <!-- TOC -->
 
