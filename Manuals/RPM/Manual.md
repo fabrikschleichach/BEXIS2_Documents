@@ -1,4 +1,4 @@
-# Data Structure and Variable Templates
+# Create a Data Structure
 
 <!-- TOC -->
 
