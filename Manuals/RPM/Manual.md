@@ -13,7 +13,7 @@
 - [3 Variable Templates](#3-variable-templates)
 	- [3.1 Data Types](#31-data-types)
 	- [3.2 Units](#32-units)
-	- [3.2 Create a Variable Template](#33-create-a-variable-template)
+	- [3.3 Create a Variable Template](#33-create-a-variable-template)
 
 
 
@@ -26,7 +26,7 @@ In BEXIS2, data is stored and managed as part of a **dataset**. You can think of
 
 ![image](https://user-images.githubusercontent.com/68608907/232004312-0192043f-03be-4b11-b8bf-01e935f9f40b.png)
 
-* **Metadata**: describes the dataset, e.g. who created the dataset and when
+* **Metadata**: describing facts about the dataset, e.g. who created the dataset and when
 * **(Primary) Data**: can be files or tabular data
 * **File**: unstructured data, e.g. an audio file or image
 * **Tabular Data**: structured data; supported formats are Excel and ASCII
@@ -34,13 +34,13 @@ In BEXIS2, data is stored and managed as part of a **dataset**. You can think of
  
 The Data Structure of a File is its technical format. 
 
-The Data Structure of Tabular Data are its **Variables**. Each Variable is a specific instance of a variable template, which is defined by its Data Type, Unit and unique name. 
+The Data Structure of Tabular Data are its **Variables**. Each Variable is a specific instance of a [variable template](#3-variable-templates), which is defined by its Data Type, Unit and unique name. 
 
 If you want to upload tabular data to the system, there must be a corresponding data structure.
 
 ## 2 Data Structure
 
-Data Structures contain Variables, which are specific instances of Variable Templates. A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. For every column of your tabular data you have to define a variable. 
+Data Structures contain Variables, which are specific instances of [Variable Templates](#3-variable-templates). A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. For every column of your tabular data you have to define a variable. 
 
 ![image](https://user-images.githubusercontent.com/68608907/232013885-99b17aed-9d5d-4143-b3f4-921e7b86f240.png)
 
@@ -50,10 +50,10 @@ Click on Create Data Structure from *Plan > Manage Data Structures*, and then se
 
 ![Create Datastructure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_data_structure.png) 
 
-BEXIS2 will now refer you to the page where you can build your data structure by adding variables.
+BEXIS2 will now refer you to the tool with which you can build your data structure by adding variables.
 
 ![Add Variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/add_variables.png)
-Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR.
+Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR. If there`s no variable template that fits to your data yet, you can [create a new one](#33-create-a-variable-template).
 
 When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific. 
 
@@ -98,11 +98,9 @@ Macro security settings are generally located in the Trust Center.
 
 You can think of a Variable Template as a construction plan for a variable. It defines the data type and unit of a variable. 
 
-The idea of Variable Templates is to **support reusability**: You don`t have to define the data type or unit of a variable every time you use it in your tabular data. Instead, you can pick an existing variable template and modify its properties according to your needs. This way, you also **improve data quality**, since similar things are defined to be similar, and thus can be more easily related to each other.
+The idea of Variable Templates is to **support reusability**: You don`t have to define the data type or unit of a variable each time you upload data. Instead, you can pick an existing variable template and modify its properties according to your needs. This way, you also **improve data quality**, since similar things are defined to be similar, and thus can be more easily related to each other.
 
-
-
-
+To increase the compatibility of our project data with data from other biodiversity projects, the naming of our variable templates is mainly based on **Darwin Core**. [Darwin Core](https://dwc.tdwg.org/) "includes a glossary of terms (in other contexts these might be called properties, elements, fields, columns, attributes, or concepts) intended to facilitate the sharing of information about biological diversity by providing identifiers, labels, and definitions." 
 
 ### 3.1 Data Types
 
@@ -138,23 +136,54 @@ Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/e
 
 ### 3.3 Create a Variable Template
 
-If there is not yet a variable template, that fits to your variable, you can create a new variable template.
-With the Variable Template Manager you are able to create, modify and delete Variable Templates (called Data Attributes in older BEXIS2 versions). Variables are required to create Data Structures.
-
-To create a Variable Template, click on the Create Variable Template button. Fill the fields. Select an associated Unit and Data Type and click on the Save button. The Variable Template is stored if all information are correct and it is not a duplicate.
-
-Use ![Edit button](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) for edit and ![Delete Button](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) for delete a Variable Template.
+If there is not yet a variable template, that fits to your data, you can email your data manager (betafor@uni-wuerzburg.de) or create one on your own. 
 
 ![Create Variable templates](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_variable.png) 
 
-It is possible to put constraints on Variable Templates, to add constraints click on the link Constrains. You can add a Range, a Pattern and a Domain Constraint to each Variable Template.
+To create a Variable Template, click on the Create Variable Template button and fill in the fields:
 
-*   Range: If the input data is of numeric type, this constraint checks whether the input value falls in the specified range. If the input data is of type string, the range check behaves like a length check, which means the length of the input string should fall in the range. The range has a lower bound and an upper bound, plus two indicators to show whether the boundary values are included in the range. Negate function checks if the value is out of the range!
-*   Pattern: takes the value as input and matches it against a pattern to see whether the pattern is found in the input. If so, it returns true; otherwise false. Pattern constraints apply to text values only, for more information on the format click [here](https://en.wikipedia.org/wiki/Regular_expression).
-*   Domain: takes the value as input and matches it against each and every domain item in the list. If the value matches one, it stops matching and returns true, which means the value satisfies the constraint. If no match is found it returns false. No duplicate domain item is allowed, although it does not affect the matching procedure described. Domain items can be characters, strings, Booleans or numbers. Their data type is enforced by the associated Variable Template. Using the domain constraint as a tool to model acronyms and similar topics provided that some extra information such as description of each item is available, is supported.
-*   Negation: The inversion of the chosen constraint will apply. In fact the result of the constraint is XORed with the negation field. For example, a negated Range Constraint of Min=1 and Max=100 will allow all values outside of this range.
+**Name**
 
+As most of our Variable Templates are based on Darwin Core Terms, it would be great, if you could search for a suitable name/term in the [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/). 
 
+Otherwise ...
+
+* Choose an English name
+* Starting with a capital letter
+* No spaces
+* No special characters
+* Avoid abbreviations
+* If your Variable Template name consists of more than one word, combine it with CamelCase, e.g. Species detected -> "SpeciesDetected".
+
+**Short Name**
+
+Same entry as Name.
+
+**Unit**
+
+Select a Unit from the list or [create a new one](#32-units)
+
+**Data Type**
+
+Select a [Data Type](#31-data-types) from the list. 
+
+**Description**
+
+Please take some time to add a short description to ensure that others with similar data can reuse the variable template. 
+
+**Constraints**
+
+Define Constraints if you want to set limitations which will be checked during the validation process.
+
+There are three types of constraints:
+
+![grafik](https://user-images.githubusercontent.com/68608907/233010636-9ccf121e-e9ed-4fb0-8d46-c4d39a951b37.png)
+
+* **Range**: If the input data is of type *Numeric*, this constraint checks whether the input value falls within the specified range. If the input data is of type *String*, the range check behaves like a length check, i.e. the length of the input string should fall within the range. The range has a lower and an upper limit. You can select the corresponding checkboxes if you want to include the limits in the range. If the "negate" checkbox is activated, the function checks whether the value is out of range!
+* **Pattern**: Only for data of type String. The pattern constraint takes the value as input and matches it against the specified pattern. Please [test the regular expression](https://regexr.com/) before entering it here. If the "negate" checkbox is activated, the function will check if the input does not match the pattern!
+* **Domain**: Takes the value as input and matches it against each item in the list. If there´s a match, the matching process stops and true is returned. If no match is found, the function returns false. No duplicate item is allowed, although it does not affect the matching process. Domain items can be characters, strings, Booleans or numbers. Their data type is determined by the associated Variable Template. 
+
+Use ![Edit button](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) to edit and ![Delete Button](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) to delete a Variable Template.
 
 
 
