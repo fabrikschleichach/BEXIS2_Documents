@@ -1,4 +1,4 @@
-# Create a Data Structure
+# Create Data Structure
 
 <!-- TOC -->
 
