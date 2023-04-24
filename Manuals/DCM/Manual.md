@@ -96,7 +96,7 @@ Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from a
 | @Identifier type		| Will be set by the data manager.	| DOI	|
 | Publisher			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
 | Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. | 2025
-| Resource Type 		| There a 3 options: **Human Observation**, **Machine Observation** and **Material Citation**. Check the info button for more information. | Human Observation |
+| Resource Type 		| There are 3 options: **Human Observation**, **Machine Observation** and **Material Citation**. Check the info button for more information. | Human Observation |
 | @Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
 | Language			| The Language of the (primary) data. | en 	|
 | Version 			| Will be set automatically. 	| 2		|
@@ -140,10 +140,7 @@ The subject field is repeatable.
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
 The form is repeatable, i.e. you can enter as many contributors (e.g. Studentische Hilfskräfte) as appropriate.
 
-**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**
-
-
-| Element / @Attribute Name 	| How to fill it		| Example 	|
+**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**| Element / @Attribute Name       | How to fill it		    | Example 	    |
 |-------------------------------|-------------------------------|---------------|
 | Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
@@ -162,16 +159,39 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Studentisc
 
 ### 3.1.6 Alternate Identifiers
 
+The element *Alternate Identifiers* should be used in cases of large raw data, that cannot be stored directly in BEXIS2. 
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Alternate identifier		| Enter the storage location of the (large raw) data here. | |
+| @Alternate Identifier		| Fill in **External storage location**	| External storage location |
+
 ### 3.1.7 Related Identifiers
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Related identifier		| 				|		|
+
 
 ### 3.1.8 Formats
 
 ### 3.1.9 Rights List
 
-### 3.1.10 Descritpions
+Choose a (![Creative Commons])(https://creativecommons.org/licenses/?lang=de) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
+
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Rights			| **!!!Leave this field empty!!!** | --- 	|
+| @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
+
+### 3.1.10 Descriptions
 
 ### 3.1.11 Funding References 
 
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Funder name 			| 				|		|
 ### 3.1.12 Related Items
 
 
