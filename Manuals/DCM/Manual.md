@@ -177,7 +177,7 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 
 ### 3.1.9 Rights List
 
-Choose a (![Creative Commons])(https://creativecommons.org/licenses/?lang=de) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
+Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
@@ -191,7 +191,8 @@ Choose a (![Creative Commons])(https://creativecommons.org/licenses/?lang=de) li
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Funder name 			| 				|		|
+| Funder name 	
+| 				|		|
 ### 3.1.12 Related Items
 
 
