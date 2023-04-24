@@ -140,7 +140,9 @@ The subject field is repeatable.
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
 The form is repeatable, i.e. you can enter as many contributors (e.g. Studentische Hilfskräfte) as appropriate.
 
-**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**| Element / @Attribute Name       | How to fill it		    | Example 	    |
+**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**
+
+| Element / @Attribute Name       | How to fill it		    | Example 	    |
 |-------------------------------|-------------------------------|---------------|
 | Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
@@ -182,7 +184,7 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) lice
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Rights			| **!!!Leave this field empty!!!** | --- 	|
+| Rights			| **!!! Leave this field empty !!!** | --- 	|
 | @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
 
 ### 3.1.10 Descriptions
