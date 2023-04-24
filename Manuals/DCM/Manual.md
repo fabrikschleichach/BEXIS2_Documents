@@ -5,12 +5,9 @@
 
 - [Data Collection: Metadata and Data](#data-collection-metadata-and-data)
 	- [1 Overview](#1-overview)
-	- [2 Create Dataset](#2-create-dataset)
-	- [Copy an existing Dataset](#copy-an-existing-dataset)
-			- [1.1 Metadata](#11-metadata)
-			- [1.2 Dataset links](#12-dataset-links)
-				- [Link via Metadata](#link-via-metadata)
-				- [Direct links](#direct-links)
+	- [2 Create a Dataset](#2-create-a-dataset)
+	- [3 Provide some Metadata](#3-provide-some-metadata)
+		- [3.1 General Information](#31-general-information)
 		- [2 Upload data](#2-upload-data)
 			- [2.1. Upload Tabular Data](#21-upload-tabular-data)
 				- [Select File](#select-file)
@@ -27,13 +24,7 @@
 			- [3.4 Verification](#34-verification)
 			- [3.5 Summary](#35-summary)
 	- [4 Push Big File](#4-push-big-file)
-	- [C: Manual for administrators](#c-manual-for-administrators)
-		- [1 Manage Metadata Structure](#1-manage-metadata-structure)
-			- [1.1 Select File](#11-select-file)
-			- [1.2 Read Source](#12-read-source)
-			- [1.3 Set Parameters](#13-set-parameters)
-			- [1.4 Summary](#14-summary)
-		- [2 Configure dataset links](#2-configure-dataset-links)
+	
 
 <!-- /TOC -->
 
@@ -55,7 +46,7 @@ You can upload a file or tabular data to the system in three steps:
 3. Upload your data
 
 
-## 2 Create Dataset
+## 2 Create a Dataset
 
 Select the Collect menu and click on Create Dataset. 
 
@@ -65,25 +56,22 @@ You can either create a new Dataset or select an existing one to copy its metada
 
 ![NewDataset](https://user-images.githubusercontent.com/68608907/233046860-ba247d11-0149-4c0a-9e61-6b5079e15885.PNG)
 
-Select a Data Structure which fits to your data.
+Select a Data Structure that fits to your data.
 
 Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it now (check the "Create a Data Structure"-Manual).
 
 ![grafik](https://user-images.githubusercontent.com/68608907/233047930-2b1cf861-6269-428b-9f2f-3ad3afdd29ae.png)
 
+Finally, select DataCite_bexis as Metadata Structure and click the Next button.
 
 
-The next stage is determined by the selected metadata structure.
+## 3 Provide some Metadata
 
-##### Copy an existing Dataset
+### 3.1 General Information
 
-By choosing an existing Dataset instead of creating a new one, you are able to make a copy of that dataset. Related to the Dataset, you can choose a Data Structure, but there is only one related Metadata Structure for each dataset.
+**DataCite_bexis** is a DataCite profile. For more information about the DataCite metadata scheme, visit: https://schema.datacite.org/meta/kernel-4.4/.
 
-You are able to use predefined content or change fields as you want.
-
-#### 1.1 Metadata
-
-The content area is where you enter metadata describing your dataset. The forms provided here may look different and contain different attributes depending on the metadata schema (structure) you have chosen in the first step.
+The metadata form contains different icons. Here is an explanation:
 
 ![Required](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/red_star.png)           Required attributes
 
@@ -97,7 +85,96 @@ The content area is where you enter metadata describing your dataset. The forms 
 
 ![Help](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/help.png)   	Show help information. The button on the right top hides / shows all help information. 
 
-![Create Dataset Metadata](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Create%20Dataset%20Metadata.png) 
+There are some fields, e.g. *Identifier*, that cannot be selected because they are set automatically by the system.
+Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from autocomplete list.”. In this case, you may only enter the first letter of the item and the system will automatically complete it.
+
+### 3.1.1 Basic
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Identifier			| Will be set automatically.	| 1		|
+| @Identifier type		| Will be set by the data manager.	| DOI	|
+| Publisher			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
+| Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. | 2025
+| Resource Type 		| There a 3 options: **Human Observation**, **Machine Observation** and **Material Citation**. Check the info button for more information. | Human Observation |
+| @Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
+| Language			| The Language of the (primary) data. | en 	|
+| Version 			| Will be set automatically. 	| 2		|
+
+### 3.1.2 Creators
+
+Creators are the main researchers involved working on the data in priority order. All creators are owners of the dataset and have **write permission**. 
+The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as appropriate.
+
+**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**
+
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Creator name			| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
+| Given name			| Will be set automatically. 	| Sonja 	|
+| Family name			| Will be set automatically.	| Kümmet	|
+| Name identifier		| Will be set automatically. A unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
+| @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
+| Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald)	| University of Würzburg, Zoology III |
+
+### 3.1.3 Titles 
+
+The title field is repeatable. 
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Title 			| Format: **Project_Subproject_Organism_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2022/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
+| @Title type			| Leave the field empty if you have only one (main) title. | |
+
+### 3.1.3 Subjects
+
+The subject field is repeatable. 
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Subject			| You can provide the **scientific name of an organism** here. Ideally, the name supplied is at species level or below. If the determination only allows for information on a higher level, this is acceptable as well. Valid scientific names are Latin names following the syntax rules of the respective taxon group (e.g. botanical nomenclature). | Parus major |
+
+### 3.1.4 Contributors
+
+Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
+The form is repeatable, i.e. you can enter as many contributors (e.g. Studentische Hilfskräfte) as appropriate.
+
+**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**
+
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
+| Given name			| Will be set automatically. 	| Sonja 	|
+| Family name			| Will be set automatically.	| Kümmet	|
+| Name identifier		| Will be set automatically. A unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
+| @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
+| Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald)	| University of Würzburg, Zoology III |
+
+### 3.1.5 Dates 
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Date				| Will be set automatically. Date, when the dataset was created. | 2023-06-12 |
+| @Date type			| Select **Created**            | Created	|
+
+
+### 3.1.6 Alternate Identifiers
+
+### 3.1.7 Related Identifiers
+
+### 3.1.8 Formats
+
+### 3.1.9 Rights List
+
+### 3.1.10 Descritpions
+
+### 3.1.11 Funding References 
+
+### 3.1.12 Related Items
+
+
 
 On the bottom of the page, there is a button titled Validate to examine whether required attributes have been filled and values fit to the expected data format. 
 
@@ -267,79 +344,7 @@ Each user has a personal folder on the server where files are stored temporary. 
 
 ![Push Big File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/push_big_file.png)
 
-## C: Manual for administrators
 
-### 1 Manage Metadata Structure
-
-Metadata structures (also called schemas or profiles) are typically created and imported by a data manager or administrator of the system. Thus this import function is available under the Setup > Import metadata Structure. The wizard will assist you in importing your metadata structure into the BEXIS2\. A metadata structure must be defined in a XSD schema file.
-
-When importing a metadata schema into BEXIS2, each element of the XSD file(s) is analyzed for its type, name, annotations, attributes, data types, constraints etc. Based on this information a form is automatically being created. For example, if an element is of data type Date, a date picker UI component will be used in the form. Also all names and descriptions are used exactly as they are in the XSD file(s).
-
-NOTE: There are metadata standards available for almost any domain or type of data. It is good practice to follow one of them in order to ensure interoperability later on. However, although technical possible, most standards are very complex and should not be used as a whole. Users would just be overwhelmed and may need only a small selection of elements to describe their data. Standards are designed to cover a great range of use cases and data managers (in collaboration with their community) should make the effort in defining a set of feasible metadata elements in a profile (XSD file).
-
-IMPORTANT: Please check, whether the XSD schema files have any dependencies to other files. You can find the dependencies in the import or include tags.
-
-![Metadata1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/metadata1.png)
-
-The current BEXIS2 system requires all referenced files to be locally available on the server (no URL to external resource). So you may need to store all references first to a local folder, change the schema location path in every file (e.g. ./fileName.xsd) and then upload all files to the server. (See section [Push Big File](#_push_big_file)).
-
-![metadata2](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/metadata2.png)
-
-![metadata3](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/metadata3.png) 
-
-Upload a Metadata Structure follows the following steps:
-
-#### 1.1 Select File
-
-In the first step an existing file containing your data needs to be selected. You can either select a XSD file from your local computer or a file that has been uploaded to the server prior to starting the Wizard. You may use the "Push big data to server" function in the Collect menu to upload multiple related XSD files.
-
-Note: Please upload a valid XSD structure. BEXIS2 does not check this kind of validation.
-
-![Select XSD File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/select_xsd.png) 
-
-#### 1.2 Read Source
-
-Please specify a name (i.e. display name) for the new metadata structure. You may also enter a root node if only a part of the XSD is to be used (optional).
-
-![Read XSD File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/read_xsd.png)  
-
-To find the root node open the XSD Schema file and have a look on the element tags. In the example of ABCD it looks like this.
-
-![img27](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/metadata4.png)  
-
-If no root node is selected then the wizard will automatically select the first element which is a complex type. But it is also possible to define the element "DataSet" as root node and the metadata structure starts from this element. The Name of a metadata structure must be unique and the root node must exist.
-
-#### 1.3 Set Parameters
-
-For the system to handle a dataset at least the title and a description is needed. In this step these two elements, which are typically available in all metadata structures, should be identified and made explicit to the system.
-
-![Set XSD Parameters](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/set_xsd_parameters.png) 
-
-#### 1.4 Summary
-
-The Summary page is an overview about the created metadata structure.
-
-![Summary](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/summary_xsd.png)
-
-### 2 Configure dataset links
-The reference types and descriptons can be configured under *Workspace/Modules/DCM/EntityReferenceConfig.Xml*. If the system contains also other entity types, which should be not allowed for linking, you can define a whitelist of shown datasets types.
-
-```XML
-<config>
-<referenceTypes>
-    <referenceType description="">collection</referenceType>
-    <referenceType description="">based on</referenceType>
-    <referenceType description="">child of</referenceType>
-    <referenceType description="">parent of</referenceType>
-    <referenceType description="">link</referenceType>
-</referenceTypes>
-<!--Whitelist for entity types. Please configure, if you need to hide entities from the list
-<entityTypes>
-    <entityType description="">Dataset</entityType>
-</entityTypes>-->
-</config>
-
-```
 
 
 
