@@ -114,7 +114,7 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 | Creator name			| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
-| Name identifier		| Will be set automatically. A unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
+| Name identifier		| Will be set automatically. An unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
 | @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
 | Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald)	| University of Würzburg, Zoology III |
 
@@ -147,7 +147,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Studentisc
 | Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
-| Name identifier		| Will be set automatically. A unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
+| Name identifier		| Will be set automatically. An unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
 | @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
 | Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald)	| University of Würzburg, Zoology III |
 
