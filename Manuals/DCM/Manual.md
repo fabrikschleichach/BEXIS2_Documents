@@ -95,7 +95,7 @@ Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from a
 | Identifier			| Will be set automatically.	| 1		|
 | @Identifier type		| Will be set by the data manager.	| DOI	|
 | Publisher			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
-| Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. | 2025
+| Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
 | Resource Type 		| There are 3 options: **Human Observation**, **Machine Observation** and **Material Citation**. Check the info button for more information. | Human Observation |
 | @Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
 | Language			| The Language of the (primary) data. | en 	|
@@ -106,17 +106,17 @@ Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from a
 Creators are the main researchers involved working on the data in priority order. All creators are owners of the dataset and have **write permission**. 
 The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as appropriate.
 
-**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**
+**!!! Due to software issues, please fill the field "@Name identifier scheme" (= ORCID) first !!!**
 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Creator name			| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
+| Creator name			| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
-| Name identifier		| Will be set automatically. An unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
+| Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
 | @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
-| Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald)	| University of Würzburg, Zoology III |
+| Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald).	| University of Würzburg, Zoology III |
 
 ### 3.1.3 Titles 
 
@@ -124,8 +124,8 @@ The title field is repeatable.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Title 			| Format: **Project_Subproject_Organism_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2022/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
-| @Title type			| Leave the field empty if you have only one (main) title. | |
+| Title 			| Format: **Project_Subproject_Organism_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2021/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
+| @Title type			| Leave the field empty if there is only one (main) title. | |
 
 ### 3.1.3 Subjects
 
@@ -140,16 +140,16 @@ The subject field is repeatable.
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
 The form is repeatable, i.e. you can enter as many contributors (e.g. Studentische Hilfskräfte) as appropriate.
 
-**!!! Due to software issues, please fill the field "Name identifier scheme" (= ORCID) first !!!**
+**!!! Due to software issues, please fill the field "@Name identifier scheme" (= ORCID) first !!!**
 
 | Element / @Attribute Name       | How to fill it		    | Example 	    |
 |-------------------------------|-------------------------------|---------------|
-| Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator | Kümmet, Sonja |
+| Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
-| Name identifier		| Will be set automatically. An unique identifier for the person. Default is ORCID. | 0000-0002-8954-0200 |
+| Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
 | @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
-| Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald)	| University of Würzburg, Zoology III |
+| Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald).	| University of Würzburg, Zoology III |
 
 ### 3.1.5 Dates 
 
@@ -166,21 +166,40 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | Alternate identifier		| Enter the storage location of the (large raw) data here. | |
-| @Alternate Identifier		| Fill in **External storage location**	| External storage location |
+| @Alternate Identifier		| Fill in **External storage location**.	| External storage location |
 
 ### 3.1.7 Related Identifiers
 
+The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
+
+Note: If you enter the field *Related Identifier*, a link is created in both directions, based on the current versions of the datasets.
+
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Related identifier		| 				|		|
-
+| Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
+| @Related identifier type 	| Default is **URL**. 		| URL		|
+| @Related type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | Compiles |
 
 ### 3.1.8 Formats
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Format			| Use ![iana media types](https://www.iana.org/assignments/media-types/media-types.xhtml) for specifying the technical format of the (primary) data. | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+
+Here some common formats: 
+
+| File extension| iana media type |
+|---------------|-----------------|
+| .xlsx		| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+| .xls		| application/vnd.ms-excel |
+| .csv		| text/csv |
+| .jpg		| image/jpg |
+| .png		| image/png |
+| .txt		| text/plain |
 
 ### 3.1.9 Rights List
 
 Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
-
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
@@ -189,14 +208,42 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) lice
 
 ### 3.1.10 Descriptions
 
-### 3.1.11 Funding References 
+The field *Description* is repeatable. Please provide at least an **Abstract** (@DescriptionType="Abstract") and some information about the underlying **Methods** (@DescriptionType="Methods"). 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Funder name 	
-| 				|		|
+| Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
+| @Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
+
+### 3.1.11 Funding References 
+
+**!!! Due to software issues, please select the "@Funder identifier type" (= ROR) first !!!**
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Funder name 			| Will be set automatically. The name of the project funder. | Deutsche Forschungsgemeinschaft (DFG) |			
+| Funder identifier		| Will be set automatically. An unique identifier for the funder. | https://ror.org/018mejw64 |
+| @Funder identifier type 	| Select **ROR**. A scheme for identifying organizations. | ROR |
+| Award number			| Will be set automatically. The number of the grant. | 459717468 |
+| Award URI			| Will be set automatically. The URI of the grant. | https://gepris.dfg.de/gepris/projekt/459717468 |
+| Award title 			| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR: Enhancing the structural diversity between patches for improving multidiversity and multifunctionality in production forests. | 
+
 ### 3.1.12 Related Items
 
+If your data has been published in a journal, you can share this information by entering the following fields:
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| Related item identifier 	| The identifer of the publication. | https://doi.org/10.3897/BDJ.9e77092 |
+| @Related item identifier type	| The type of identifier.	| DOI		|
+| Publication year		| Format: YYYY			| 2021		|
+| Volume			|				| 9		|
+| Issue				|				| 		|
+| First page			|				|		|
+| Last page			|				|		|
+| Journal publisher		| The publisher of the journal.	| Pensoft	|
+| Journal title 		| The title of the journal (NOT the data). | Biodiversity Data Journal		|
+| @Title type			|				|		|
 
 
 On the bottom of the page, there is a button titled Validate to examine whether required attributes have been filled and values fit to the expected data format. 
