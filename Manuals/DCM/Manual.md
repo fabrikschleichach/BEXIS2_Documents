@@ -8,27 +8,35 @@
 	- [2 Create a Dataset](#2-create-a-dataset)
 	- [3 Provide some Metadata](#3-provide-some-metadata)
 		- [3.1 General Information](#31-general-information)
-		- [2 Upload data](#2-upload-data)
-			- [2.1. Upload Tabular Data](#21-upload-tabular-data)
-				- [Select File](#select-file)
-				- [Get File Information](#get-file-information)
-				- [Specify Dataset](#specify-dataset)
-				- [Choose Update Method](#choose-update-method)
-				- [Validation](#validation)
-				- [Summary](#summary)
-			- [2.2 Upload File](#22-upload-file)
-		- [3 Import Data](#3-import-data)
-			- [3.1 Select File](#31-select-file)
-			- [3.2 Metadata](#32-metadata)
-			- [3.3 Select Areas](#33-select-areas)
-			- [3.4 Verification](#34-verification)
-			- [3.5 Summary](#35-summary)
-	- [4 Push Big File](#4-push-big-file)
+		- [3.2 Basic](#32-basic)
+		- [3.3 Creators](33-creators)
+		- [3.4 Titles](34-titles)
+		- [3.5 Subjects](35-subjects)
+		- [3.6 Contributors](36-contributors)
+		- [3.7 Dates](37-dates)
+		- [3.8 Alternate Identifiers](38-alternate-identifiers)
+		- [3.9 Related Identifiers](39-related-identifiers)
+		- [3.10 Formats](310-formats)
+		- [3.11 Rights List](311-rights-list)
+		- [3.12 Descriptions](312-descriptions)
+		- [3.13 Funding References](313-funding-references)
+		- [3.14 Related Items](314-related-items)
+	- [4 Upload data](#4-upload-data)
+		- [4.1 Upload File](#41-upload-file)
+		- [4.2 Push Big File](#42-push-big-file)
+		- [4.3 Upload Tabular Data](#43-upload-tabular-data)
+			- [Select File](#select-file)
+			- [Get File Information](#get-file-information)
+			- [Specify Dataset](#specify-dataset)
+			- [Choose Update Method](#choose-update-method)
+			- [Validation](#validation)
+			- [Summary](#summary)
+	
 	
 
 <!-- /TOC -->
 
-## 1: Overview
+## 1 Overview
 
 In BEXIS2, data is stored and managed as part of a dataset. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other.
 
@@ -41,9 +49,9 @@ In BEXIS2, data is stored and managed as part of a dataset. You can think of a D
 * **Data Structure**: describes the structure of the data
 
 You can upload a file or tabular data to the system in three steps:
-1. [Create a Dataset](#2-create-dataset) as Container for your data
-2. Describe your data by filling in the Metadata form
-3. Upload your data
+1. [Create a Dataset](#2-create-a-dataset) as Container for your data
+2. [Describe your data](#3-provide-some-metadata) by filling in the Metadata form
+3. [Upload your data](#4-upload-data)
 
 
 ## 2 Create a Dataset
@@ -88,7 +96,13 @@ The metadata form contains different icons. Here is an explanation:
 There are some fields, e.g. *Identifier*, that cannot be selected because they are set automatically by the system.
 Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from autocomplete list.”. In this case, you may only enter the first letter of the item and the system will automatically complete it.
 
-### 3.1.1 Basic
+At the bottom of the page there is a button titled Validate, which can be used to check whether the required attributes have been filled in and the inputs match the expected data format. 
+
+You can edit a submitted dataset or make a copy of that by clicking the Edit or Copy buttons.
+
+If an input is wrong or missing, the corresponding field is highlighted in red. 
+
+### 3.2 Basic
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
@@ -101,7 +115,7 @@ Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from a
 | Language			| The Language of the (primary) data. | en 	|
 | Version 			| Will be set automatically. 	| 2		|
 
-### 3.1.2 Creators
+### 3.3 Creators
 
 Creators are the main researchers involved working on the data in priority order. All creators are owners of the dataset and have **write permission**. 
 The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as appropriate.
@@ -118,7 +132,7 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 | @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
 | Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald).	| University of Würzburg, Zoology III |
 
-### 3.1.3 Titles 
+### 3.4 Titles 
 
 The title field is repeatable. 
 
@@ -127,7 +141,7 @@ The title field is repeatable.
 | Title 			| Format: **Project_Subproject_Organism_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2021/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
 | @Title type			| Leave the field empty if there is only one (main) title. | |
 
-### 3.1.3 Subjects
+### 3.5 Subjects
 
 The subject field is repeatable. 
 
@@ -135,7 +149,7 @@ The subject field is repeatable.
 |-------------------------------|-------------------------------|---------------|
 | Subject			| You can provide the **scientific name of an organism** here. Ideally, the name supplied is at species level or below. If the determination only allows for information on a higher level, this is acceptable as well. Valid scientific names are Latin names following the syntax rules of the respective taxon group (e.g. botanical nomenclature). | Parus major |
 
-### 3.1.4 Contributors
+### 3.6 Contributors
 
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
 The form is repeatable, i.e. you can enter as many contributors (e.g. Studentische Hilfskräfte) as appropriate.
@@ -151,7 +165,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Studentisc
 | @Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
 | Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald).	| University of Würzburg, Zoology III |
 
-### 3.1.5 Dates 
+### 3.7 Dates 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
@@ -159,7 +173,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Studentisc
 | @Date type			| Select **Created**            | Created	|
 
 
-### 3.1.6 Alternate Identifiers
+### 3.8 Alternate Identifiers
 
 The element *Alternate Identifiers* should be used in cases of large raw data, that cannot be stored directly in BEXIS2. 
 
@@ -168,7 +182,7 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 | Alternate identifier		| Enter the storage location of the (large raw) data here. | |
 | @Alternate Identifier		| Fill in **External storage location**.	| External storage location |
 
-### 3.1.7 Related Identifiers
+### 3.9 Related Identifiers
 
 The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
 
@@ -180,13 +194,13 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 | @Related identifier type 	| Default is **URL**. 		| URL		|
 | @Related type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | Compiles |
 
-### 3.1.8 Formats
+### 3.10 Formats
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | Format			| Use ![iana media types](https://www.iana.org/assignments/media-types/media-types.xhtml) for specifying the technical format of the (primary) data. | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
 
-Here some common formats: 
+Some common formats: 
 
 | File extension| iana media type |
 |---------------|-----------------|
@@ -197,7 +211,7 @@ Here some common formats:
 | .png		| image/png |
 | .txt		| text/plain |
 
-### 3.1.9 Rights List
+### 3.11 Rights List
 
 Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
 
@@ -206,7 +220,7 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) lice
 | Rights			| **!!! Leave this field empty !!!** | --- 	|
 | @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
 
-### 3.1.10 Descriptions
+### 3.12 Descriptions
 
 The field *Description* is repeatable. Please provide at least an **Abstract** (@DescriptionType="Abstract") and some information about the underlying **Methods** (@DescriptionType="Methods"). 
 
@@ -215,7 +229,7 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 | Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
 | @Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
 
-### 3.1.11 Funding References 
+### 3.13 Funding References 
 
 **!!! Due to software issues, please select the "@Funder identifier type" (= ROR) first !!!**
 
@@ -228,7 +242,7 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 | Award URI			| Will be set automatically. The URI of the grant. | https://gepris.dfg.de/gepris/projekt/459717468 |
 | Award title 			| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR: Enhancing the structural diversity between patches for improving multidiversity and multifunctionality in production forests. | 
 
-### 3.1.12 Related Items
+### 3.14 Related Items
 
 If your data has been published in a journal, you can share this information by entering the following fields:
 
@@ -246,44 +260,50 @@ If your data has been published in a journal, you can share this information by 
 | @Title type			|				|		|
 
 
-On the bottom of the page, there is a button titled Validate to examine whether required attributes have been filled and values fit to the expected data format. 
+## 4 Upload data
 
-You could edit a submitted dataset or make a copy of that by clicking on the Edit or Copy buttons.
+In BEXIS2, you can only upload your (primary) data as part of a dataset. If you have not created a dataset yet, [do it now](#2-create-a-dataset). 
 
-When an input is wrong or missing, the input field is highlighted in red. 
+There are 2 ways to upload (primary) data:
 
-#### 1.2 Dataset links
-It is possible to create relations between different datasets of one type or different types of datasets (e.g. dataset and publication). Links always refer to a specific version of a dataset. Dataset links are shown under *Links* and divided into *Links to* the dataset and *Links from* the dataset. This shows the direction of the link and clearly defines what is source and target, which might be relevant related to the type of the selected reference (e.g. parent, child ...). 
+* Click the **Primary Data** tab in the dataset details view.
+* Select **Upload Data** in the Collect menu.
 
-There are two options to create relations / links between datasets:
+In the next step you have to specify whether your (primary) data is structured (tabular data) or unstructured (file).
 
-##### Link via Metadata
-Fields in the metadata form can contain lists of datasets stored within the system. If one is selected also a link in both directions based on the most current versions is created.
+![Upload Data](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/upload_data.png)
 
-##### Direct links
-Links can also be created directly under *Link > Create link*. Here you can also choose  which version you like to refer to and what kind of link it is. In addition, you can also give more details to it.
+### 4.1 Upload File 
 
-![Create links](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/create_links.png) 
+Select a file from your local computer or pick a file that has already been uploaded to the server.
 
-### 2 Upload data
+BEXIS2 supports the following file formats:
 
-To upload your data, please go to the *Collect > Upload Data* via main menu. This wizard will assist you in uploading data into the BEXIS2 repository. A dataset can be structured or unstructured (i.e tabular or file).
+![Select File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/select_file.png)
 
-![Upload Data](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/upload_data.png) 
+Note, that the maximum supported file size is: **1024 MB**. If your file is larger than that, store it at ... and refer to the external storage location in the metadata / ![Alternate identifiers](38-alternate-identifiers). 
 
-#### 2.1. Upload Tabular Data
+If your file is larger than 4 MB, use the ![*Push Big File*](#42-push-big-file) function.
 
-The term "Tabular data" is used for all datasets where there internal structure of the data is "known" to the system. For example, in a data table the header, which defines the columns (i.e. variables) is the structure of the data. Before uploading/importing data to the system the data structure needs to be created through the Data Structure Manager.
+### 4.2 Push Big File
 
-Uploading a tabular data follows the following steps.
+If you have a large file (> 4 MB), upload it to the server first. For this case, every user has a personal folder where files can be stored temporarily. 
+Files that are stored here, can be selected via the ![upload wizard](#4-upload-data) and loaded into the BEXIS2 environment.
 
-##### Select File
+![Push Big File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/push_big_file.png)
+
+### 4.3. Upload Tabular Data
+
+Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your (tabular) data yet, do it now (check the "Create a Data Structure"-Manual).
+
+
+#### Select File
 
 In the first step an existing file containing your data needs to be selected. You can either select a file from your local computer or a file that has been uploaded to the server prior to starting the Upload Wizard. The second option is designed for files larger than 4 MB that may take several minutes to transfer. The wizard supports file formats of Microsoft Excel or ASCII. Microsoft Excel files are required to use a template created while creating a Data Structure (refer to [Data Planning User Guide](~/rpm/Help/index#_overview) for more details). Once a file has been successfully selected, click the Next button and proceed to the next step.
 
 ![Upload_Tabular](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/upload_tabular.jpg) 
 
-##### Get File Information
+#### Get File Information
 
 For all Microsoft Excel files using a BEXIS2 template the file information and data structure is automatically extracted and this step is omitted. Please refer to the [Data Planning User Guide](~/rpm/Help/index#_overview) for more details on how to create such a template.
 
@@ -307,11 +327,11 @@ Further, your data file may contain a header defining variable names, types etc.
 
 Finally, the row/column where the actual data values start needs to be specified.
 
-##### Specify Dataset
+#### Specify Dataset
 
 In BEXIS2 your data is stored and managed as part of a dataset. A dataset may contain one or more of your data files. But all data files within one dataset must be of the same data structure, i.e. the number of variables and their properties must be identical in each file. To upload your data to the system, please select one existing dataset from the dropdown list.
 
-##### Choose Update Method
+#### Choose Update Method
 
 While adding data to an existing dataset you need to specify how you want to update.
 
@@ -321,7 +341,7 @@ By Update the user need to specify a unique identifier (e.g. primary key) for ea
 
 By Append, the lines are uploaded directly to the data without checking for duplication.
 
-##### Validation
+#### Validation
 
 With this step, the selected data file is validated against the selected data structure. Both, the structure of the data (e.g. variable properties) and whether the data values fit to the specified structure (e.g. data type, value range) is evaluated.
 
@@ -329,90 +349,13 @@ Click on Validate button to validate the data file.
 
 If you go back and change something in the process of uploading, you need to validate the file again.
 
-##### Summary
+#### Summary
 
 With this final step a summary of your uploaded data file is provided. Please check the information and click the Finish button to confirm and finalize the upload.
 
-#### 2.2 Upload File
 
-An unstructured data could be either selected from your local computer or could be a file that has been uploaded to the server. In the case of unstructured data, we do not read the contents of the data. We copy the files to the server and place them in relation to the dataset.
 
-BEXIS2 application can support many file formats which are referred on the relevant page.
 
-The Maximum acceptable file size up to now is: 1024 MB.
-
-![Select File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/select_file.png)
-
-### 3 Import Data
-
-The Import Data wizard enables you to import both a tabular data structure and data in a single workflow. Import a file follows the following steps.
-
-#### 3.1 Select File
-
-In the first step an existing file containing both your data and the names of the variables needs to be selected. You can either select a file from your local computer or a file that has been uploaded to the server prior to starting the Upload Wizard. The second option is designed for files larger than 4 MB that may take several minutes to transfer. The wizard supports file formats of Microsoft Excel (*.xlsm, *.xlsx). Once a file has been successfully selected, click the Next button to proceed to the next step.
-
-![Select File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Help_easy_upload_select_file.png)
-
-#### 3.2 Metadata
-
-This step allows you to select the metadata schema that you would like to use for the dataset. There is no need to enter any metadata yet - after the last step you will be redirected to a page that allows you to enter the metadata. You can, however, change the title of the dataset. If you don't wish to change it, it will default to the name of the file you are using. Once you have selected a schema, click the Next button to proceed to the next step.
-
-![Metadata Schema](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Help_easy_upload_metadata.png)
-
-#### 3.3 Select Areas
-
-You will see a table that represents the file that you selected during the first step. Here you can select, which part of the file should be used as variables and which parts should be interpreted as data.
-
-For the variables, select a row or one part of a row and click the "Header" button. The selected area should now be highlighted in red. If you are using a BEXIS2 template file there is no need to select the whole header with unit, datatype, etc. Just select the names of the variables.
-
-For the data, you can select multiple rows and click the "Data" button. The selected area should now be highlighted in blue. Please make sure that the data area contains as many columns as the header area. You can skip one or more rows by selecting the area above them, mark it as data, and then select the area below them and mark it as well. You can use the "Expand Selection" button to expand the last data area you selected to the last row of the file. This can be very helpful when working with large datasets.
-
-If you made any mistakes during the selection process just use the "Reset" button to remove all markings and start over.
-
-If you wish to upload data from a different worksheet you can select it from the dropdown-menu and click the "Change Worksheet" button. Please be aware that you can only upload data from one sheet at a time. Once you have selected the header and at least one data area, click the Next Button to proceed to the next step.
-
-![Select Areas](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Help_easy_upload_select_areas.png)
-
-The representation of the data you will see in the table might differ from what you see in Microsoft Excel or similar programs.
-
-Don't worry, your data will be uploaded correctly if you choose the correct datatypes during the next step.
-
-The following differences are known:
-
-*   Dates and times
-
-*   Microsoft Excel users: Dates and times will be displayed as full timestamps, containing both a time and a date.
-*   Libre Office users: Dates and times will be displayed as real numbers.
-
-*   Boolean values
-
-*   Libre Office users: Boolean values might be displayed as "0" and "1".
-
-*   Real Numbers
-
-*   Real numbers might be displayed with scientific notation.
-
-#### 3.4 Verification
-
-With this step you can define which units and datatypes your variables are using. The first column of dropdown-menus provides suggestions for attributes that are being used in other datasets and are similar to your variables. If you select one of the suggestions, unit and datatype are automatically adjusted. If you don't wish to use the suggestions, feel free to choose unit and datatype yourself.
-
-The "Validate" button allows you to check if the datatypes you selected are suitable for the data you selected in the previous step. This allows you to recognize errors early and correct your selection. Once you've selected your units and datatypes, click the Next button to proceed.
-
-![Verification](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Help_easy_upload_verification.png)
-
-#### 3.5 Summary
-
-The summary step provides an overview of the dataset that is about to be created. When you click the Finish button, datastructure and dataset will be created and the data will be added. This might take a while, depending of the size of your file.
-
-![Upload_Tabular_1](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/Help_easy_upload_summary.png)
-
-As soon as this process is finished, you will be redirected to your new dataset and can add metadata, view primary data and datastructure, set permissions or publish the dataset.
-
-## 4 Push Big File
-
-Each user has a personal folder on the server where files are stored temporary. On this page you can see the uploaded files. You can delete each file by clicking on the X, or use these files later, when you want to upload data to a dataset.
-
-![Push Big File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/push_big_file.png)
 
 
 
