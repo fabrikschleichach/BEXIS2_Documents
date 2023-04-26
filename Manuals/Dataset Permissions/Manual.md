@@ -53,6 +53,7 @@ If you want to set permissions for all project members, it is best practice to s
 
 
 
+
 ### 3 Dashboard
 #### 3.1 My Datasets
 Overview on all datasets the currently logged in user has access. Datasets are groups by permission: Own (full permission including granting permission), Edit, and download.
