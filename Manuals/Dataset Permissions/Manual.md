@@ -4,11 +4,7 @@
 - [1 Overview](#1-overview)
 - [2 Dataset permissions via metadata](#2-dataset-permissions-via-metadata)
 - [3 Dataset permissions via menu](#3-dataset-permissions-via-menu)
-- [4 Dataset Requests](#4-data-requests)
-- [3 Dashboard](#3-dashboard)
-		- [3.1 My Datasets](#31-my-datasets)
-		- [3.2 My Requests](#32-my-requests)
-		- [3.3 Decision](#33-decision)
+- [4 Dataset Requests](#4-dataset-requests)
 
 	
 
@@ -57,24 +53,14 @@ If you select a Dataset for which you don`t have read permission, you can only s
 
 Please include the sequence number of the corresponding **Paper Proposal** if you wish to use the requested data for a publication.
 
-### 3 Dashboard
-#### 3.1 My Datasets
-Overview on all datasets the currently logged in user has access. Datasets are groups by permission: Own (full permission including granting permission), Edit, and download.
-Datasets marked in red have incomplete metadata.
+In your **Dashboard** you will find a list of all your pending and answered data access requests. Pending requests can be withdrawn/deleted if the request is no longer valid.
 
-![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/dashboard.png)
-
-In your **Dashboard** there is a list of all your pending and answered requests for data access permissions. Pending requests can be withdrawn/delete, if the request is not anymore valid.
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/Requests.png)
 
- 
-#### 3.3 Decision
-List of all answered and pending requests related to your datasets. You can accept (hook) or reject (minus) pending requests. The requesting person will be informed via email about your decision. 
+There is also a list of all answered and pending requests related to your datasets. You can accept (hook) or reject (minus) pending requests. The requesting person will be automatically informed about your decision via email. 
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/decision.png)
 
 
 
-
-
-[Go to top](#a-overview)
+[Go to top](#1-overview)
