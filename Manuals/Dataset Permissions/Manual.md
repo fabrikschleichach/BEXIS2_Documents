@@ -46,13 +46,16 @@ Select a Dataset and open the *Dataset Permissions* tab.
 
 ![grafik](https://user-images.githubusercontent.com/68608907/234571603-d9f42d02-e111-4a12-b2a5-d3f522ffeb39.png)
 
-Grant permissions on the dataset to another user by selecting the appropriate checkboxes.  
-If you want to set permissions for all project members, it is best practice to set permissions for the corresponding Group (e.g. BETA-FOR) and not for each individual User. 
+You can grant permissions on the dataset to another user by selecting the appropriate checkboxes.  
+If you want to set permissions for all project members, set permissions for the corresponding *Group* (e.g. BETA-FOR) and not for each individual *User*. 
 
 ## 4 Dataset Requests
 
+If you select a Dataset for which you don`t have read permission, you can only see its Metadata and Data Structure. If you also want to see and download its Primary Data, you can send an **Access Request** to its Owner(s). 
 
+![grafik](https://user-images.githubusercontent.com/68608907/234676764-729632fd-6615-4a70-a5e1-842962279f7f.png)
 
+Please include the sequence number of the corresponding **Paper Proposal** if you wish to use the requested data for a publication.
 
 ### 3 Dashboard
 #### 3.1 My Datasets
@@ -61,9 +64,7 @@ Datasets marked in red have incomplete metadata.
 
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/dashboard.png)
 
-
-#### 3.2 My Requests
-List of all your pending and answered requests for data access permissions. Pending requests can be withdrawn/delete, if the request is not anymore valid.
+In your **Dashboard** there is a list of all your pending and answered requests for data access permissions. Pending requests can be withdrawn/delete, if the request is not anymore valid.
 ![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/Requests.png)
 
  
