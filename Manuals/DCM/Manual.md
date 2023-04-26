@@ -25,12 +25,12 @@
 		- [4.1 Upload File](#41-upload-file)
 		- [4.2 Push Big File](#42-push-big-file)
 		- [4.3 Upload Tabular Data](#43-upload-tabular-data)
-			- [Select File](#select-file)
-			- [Get File Information](#get-file-information)
-			- [Specify Dataset](#specify-dataset)
-			- [Choose Update Method](#choose-update-method)
-			- [Validation](#validation)
-			- [Summary](#summary)
+			- [4.3.1 Select File](#431-select-file)
+			- [4.3.2 Get File Information](#432-get-file-information)
+			- [4.3.3 Specify Dataset](#433-specify-dataset)
+			- [4.3.4 Choose Update Method](#434-choose-update-method)
+			- [4.3.5 Validation](#435-validation)
+			- [4.3.6 Summary](#436-summary)
 	
 	
 
@@ -296,72 +296,85 @@ Files that are stored here, can be selected via the ![upload wizard](#4-upload-d
 
 Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your (tabular) data yet, do it now (check the "Create a Data Structure"-Manual).
 
+Tabular data - in terms of BEXIS2 - is *structured data*. BEXIS2 supports both Excel (.xlsm, .xlsx) and ASCII files (.csv, .txt, .tsv). 
 
-#### Select File
+It is recommended to use a **BEXIS2 Excel template** (.xslm). 
 
-In the first step an existing file containing your data needs to be selected. You can either select a file from your local computer or a file that has been uploaded to the server prior to starting the Upload Wizard. The second option is designed for files larger than 4 MB that may take several minutes to transfer. The wizard supports file formats of Microsoft Excel or ASCII. Microsoft Excel files are required to use a template created while creating a Data Structure (refer to [Data Planning User Guide](~/rpm/Help/index#_overview) for more details). Once a file has been successfully selected, click the Next button and proceed to the next step.
+The optimal workflow would be as follows: 
+1) Create a Data Structure for your tabular data
+2) Download the Data Structure as an Excel template
+3) Fill the template with your data
+4) Upload the filled template
+
+#### 4.3.1 Select File
+
+Select a file from your local computer or a file that you have uploaded to the server before you started the Upload Wizard. The latter option, called ![*Push Big File*](#42-push-big-file), is intended for files larger than 4 MB, which can take several minutes to transfer. 
+
+Click the Next button to proceed to the next step.
 
 ![Upload_Tabular](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/upload_tabular.jpg) 
 
-#### Get File Information
+#### 4.3.2 Get File Information
 
-For all Microsoft Excel files using a BEXIS2 template the file information and data structure is automatically extracted and this step is omitted. Please refer to the [Data Planning User Guide](~/rpm/Help/index#_overview) for more details on how to create such a template.
+This step varies depending on the format of your file. 
 
-For all other Excel files, users need to provide the information by selection the data on the screen.
+##### 4.3.2.1 BEXIS2 Excel template
 
-![Upload_Tabular](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/GetFileInformations.png) 
+If you have selected a BEXIS2 Excel template, the data structure and format information will be automatically extracted and this step is omitted. 
 
-For all ASCII files users need to provide information on the file structure and formatting.
+##### 4.3.2.2 Excel file
 
-First, please choose a separator that is being used to separate data values from each other in your ASCII file.
+If your data is a (normal) Excel file, you have to specify the Header and Data part of your table.  
 
-Depending on your language different punctuation is used for decimal values. Please choose the one present in your ASCII file.
+![grafik](https://user-images.githubusercontent.com/68608907/234516538-842f6da1-0a62-4c6f-b4db-8ff897ecf9d3.png)
 
-Next please specify whether the orientation of your data is column-wise or row-wise (see figure below).
+Select the header part and click on *Header*.
+Do the same with the data part. If you have a large file with lots of rows, select only the first data row and click on *Expand Selection*.
+You can reset your selection by clicking on *Reset*. 
 
-Datasets may contain empty rows or columns on top or to the left before the header and the actual data values start. Please specify this offset in number of columns or rows. 
+![grafik](https://user-images.githubusercontent.com/68608907/234517848-d645c908-17b9-4645-b81b-93fe7ce3c7d2.png)
 
-Further, your data file may contain a header defining variable names, types etc. The row/column where this header starts needs to be specified (see figure below).
+Finally click on the Next button to proceed.
 
-![Offset.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/columnwise.jpg)![Variables.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/rowwise.jpg) 
+##### 4.3.2.3 ASCII file
 
-Finally, the row/column where the actual data values start needs to be specified.
+If you want to upload an ASCII file, you need to provide some information about the formatting and structure of your file.
 
-#### Specify Dataset
+![grafik](https://user-images.githubusercontent.com/68608907/234531709-21182201-8131-4b33-b929-fc210198449a.png)
 
-In BEXIS2 your data is stored and managed as part of a dataset. A dataset may contain one or more of your data files. But all data files within one dataset must be of the same data structure, i.e. the number of variables and their properties must be identical in each file. To upload your data to the system, please select one existing dataset from the dropdown list.
+* **Separator**: Is your data separated by a tab, comma, semicolon, space, ... ?
+* **Decimal**: Do you use a period (e.g. 3.12) or a comma (e.g. 3,12) for decimal data?
+* **TextMarker**: Do you use quotes (') or double quotes (") as text markers?
+* **Orientation**: Is your data oriented column-wise or row-wise? (s. screenshots below)
+* **Offset**: How many empty rows (or columns) are there before the header/data section begins?
+* **Variables**: Row (or column) containing the variable names (= Header).
+* **Data**: Row (or column) where the data part starts. 
 
-#### Choose Update Method
+[Offset.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/columnwise.jpg)[Variables.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/rowwise.jpg) 
 
-While adding data to an existing dataset you need to specify how you want to update.
+#### 4.3.3 Specify Dataset
 
-By Update the user need to specify a unique identifier (e.g. primary key) for each tuple (i.e. row) in your dataset. If your dataset already contains a variable with such a key, please select it. Otherwise, a primary key can be created by combining available variables. Please click the Check button to verify whether the selected combination is unique. If you go back and change something in the process of uploading, you need to check the primary key again.
+Select a dataset from the dropdown list (if it is not preselected). Click on Next.
 
-![Choose Update Method](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/ChooseUpdateMethod.png) 
+![grafik](https://user-images.githubusercontent.com/68608907/234519266-52d2457d-9150-4a1a-8160-ac4f776e720f.png)
 
-By Append, the lines are uploaded directly to the data without checking for duplication.
+#### 4.3.4 Validation
 
-#### Validation
+By clicking on the Validate button, the file will be validated against the selected data structure. 
 
-With this step, the selected data file is validated against the selected data structure. Both, the structure of the data (e.g. variable properties) and whether the data values fit to the specified structure (e.g. data type, value range) is evaluated.
+![grafik](https://user-images.githubusercontent.com/68608907/234524007-5f993d90-116c-4911-a453-e3b8e6e5db5e.png)
 
-Click on Validate button to validate the data file.
+What will be checked?
 
-If you go back and change something in the process of uploading, you need to validate the file again.
+* Data types
+* Completeness and order of the variables
+* Constraints (Range, Pattern, Domain)
 
-#### Summary
+If you get an error message, fix the problem and try to upload the data again. 
 
-With this final step a summary of your uploaded data file is provided. Please check the information and click the Finish button to confirm and finalize the upload.
+#### 4.3.6 Summary
 
-
-
-
-
-
-
-
-
-
+In this last step, a summary of the uploaded file is displayed. Please review the information and click the Finish button to confirm and complete the upload.
 
 
 [Go to top](#_overview)
