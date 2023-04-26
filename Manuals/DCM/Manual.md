@@ -28,9 +28,8 @@
 			- [4.3.1 Select File](#431-select-file)
 			- [4.3.2 Get File Information](#432-get-file-information)
 			- [4.3.3 Specify Dataset](#433-specify-dataset)
-			- [4.3.4 Choose Update Method](#434-choose-update-method)
-			- [4.3.5 Validation](#435-validation)
-			- [4.3.6 Summary](#436-summary)
+			- [4.3.4 Validation](#435-validation)
+			- [4.3.5 Summary](#436-summary)
 	
 	
 
@@ -347,10 +346,10 @@ If you want to upload an ASCII file, you need to provide some information about 
 * **TextMarker**: Do you use quotes (') or double quotes (") as text markers?
 * **Orientation**: Is your data oriented column-wise or row-wise? (s. screenshots below)
 * **Offset**: How many empty rows (or columns) are there before the header/data section begins?
-* **Variables**: Row (or column) containing the variable names (= Header).
+* **Variables**: Row (or column) containing the variable names (= header).
 * **Data**: Row (or column) where the data part starts. 
 
-[Offset.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/columnwise.jpg)[Variables.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/rowwise.jpg) 
+![Offset.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/columnwise.jpg)![Variables.JPG](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/rowwise.jpg) 
 
 #### 4.3.3 Specify Dataset
 
@@ -372,9 +371,9 @@ What will be checked?
 
 If you get an error message, fix the problem and try to upload the data again. 
 
-#### 4.3.6 Summary
+#### 4.3.5 Summary
 
 In this last step, a summary of the uploaded file is displayed. Please review the information and click the Finish button to confirm and complete the upload.
 
 
-[Go to top](#_overview)
+[Go to top](#1-overview)
