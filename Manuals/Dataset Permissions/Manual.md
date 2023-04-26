@@ -37,7 +37,7 @@ You can give persons permissions on a dataset by considering them as creator (= 
 
 | Role 		| Permissions	|
 |---------------|---------------|
-|Creator	| Read, Write, Delete, Purge |
+|Creator	| Read, Write, Delete, Grant |
 |Contributor	| Read		|	
 
 ## 3 Dataset permissions via menu
