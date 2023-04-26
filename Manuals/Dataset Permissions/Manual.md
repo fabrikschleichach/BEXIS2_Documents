@@ -47,7 +47,7 @@ Select a Dataset and open the *Dataset Permissions* tab.
 ![grafik](https://user-images.githubusercontent.com/68608907/234571603-d9f42d02-e111-4a12-b2a5-d3f522ffeb39.png)
 
 Grant permissions on the dataset to another user by selecting the appropriate checkboxes.  
-If you want to set permissions for all project members, it is best practice to set permissions for the corresponding group (e.g. BETA-FOR) and not for each individual project member. 
+If you want to set permissions for all project members, it is best practice to set permissions for the corresponding Group (e.g. BETA-FOR) and not for each individual User. 
 
 ## 4 Dataset Requests
 
