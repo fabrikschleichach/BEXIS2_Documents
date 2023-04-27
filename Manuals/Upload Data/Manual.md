@@ -148,7 +148,7 @@ The subject field is repeatable.
 ### 3.6 Contributors
 
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
-The form is repeatable, i.e. you can enter as many contributors (e.g. Studentische Hilfskräfte) as appropriate.
+The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manager, TAs, Studentische Hilfskräfte, Praktiker, ...) as appropriate.
 
 **!!! Due to software issues, please fill the field "@Name identifier scheme" (= ORCID) first !!!**
 
