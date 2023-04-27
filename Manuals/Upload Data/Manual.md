@@ -182,7 +182,7 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 
 The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
 
-To refer to the geographic information dataset use **IsSupplementedyBy** as relationType.
+To refer to the geographic information dataset use **IsSupplementedyBy** as @relationType.
 
 Note: If you enter the field *Related Identifier*, a link is created in both directions, based on the current versions of the datasets.
 
@@ -190,7 +190,7 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 |-------------------------------|-------------------------------|---------------|
 | Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
 | @Related identifier type 	| Default is **URL**. 		| URL		|
-| @Related type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | Compiles |
+| @Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | Compiles |
 
 ### 3.10 Formats
 
