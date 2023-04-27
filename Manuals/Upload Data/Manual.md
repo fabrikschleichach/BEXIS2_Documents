@@ -182,6 +182,8 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 
 The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
 
+To refer to the geographic information dataset use **IsSupplementedyBy** as relationType.
+
 Note: If you enter the field *Related Identifier*, a link is created in both directions, based on the current versions of the datasets.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
