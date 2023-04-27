@@ -6,6 +6,7 @@
 
 - [2 Data Structure](#2-data-structure)
 	- [2.1 Create a Data Structure](#21-create-a-data-structure)
+		- [2.1.1 Mandatory Variables in the context of BETA-FOR](#211-mandatory-variables-in-the-context-of-beta-for)
 	- [2.2 Edit a Data Structure](#22-edit-a-data-structure)
 	- [2.3 Create a copy of a Data Structure](#23-create-a-copy-of-a-data-structure)
 	- [2.4 Download an Excel template](#24-download-an-excel-template)
@@ -55,6 +56,8 @@ BEXIS2 will now refer you to the tool with which you can build your data structu
 ![Add Variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/add_variables.png)
 Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR. If there`s no variable template that fits to your data yet, you can [create a new one](#33-create-a-variable-template).
 
+Always provide some date and time information (in ISO 8601 standard). 
+
 When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific. 
 
 You can change the order of the variables by dragging and dropping them. 
@@ -66,6 +69,15 @@ If the *Optional* checkbox is selected, the variable/column of your tabular data
 You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.
 
 ![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
+
+### 2.1.1 Mandatory Variables in the context of BETA-FOR
+
+Every BETA-FOR Dataset should contain these two Variables:
+
+| Variable Name		| Possible Values	| Why mandatory?	| Example	|
+|----------------------	|-----------------------|----------------------|---------------|
+|**PatchLabel_BETAFOR**	| 			| Link to the detailed geographic information in a separate Dataset. | U03EAB003 |
+|**Treatment_present**	| true, false		| Indicates if the treatment was already present when the data was collected. | true |
 
 ### 2.2 Edit a Data Structure
 
