@@ -106,7 +106,7 @@ If an input is wrong or missing, the corresponding field is highlighted in red.
 | @Identifier type		| Will be set by the data manager.	| DOI	|
 | Publisher			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
 | Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
-| Resource Type 		| There are 3 options: **Human Observation**, **Machine Observation** and **Material Citation**. Check the info button for more information. | Human Observation |
+| Resource Type 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
 | @Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
 | Language			| The Language of the (primary) data. | en 	|
 | Version 			| Will be set automatically. 	| 2		|
