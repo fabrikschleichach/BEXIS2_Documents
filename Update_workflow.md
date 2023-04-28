@@ -1,4 +1,4 @@
- # To update BEXIS2 requires the following steps:
+ # Updating BEXIS2 requires the following steps:
 
 <!-- TOC -->
 - [1 Preparations](#1-preparations)
