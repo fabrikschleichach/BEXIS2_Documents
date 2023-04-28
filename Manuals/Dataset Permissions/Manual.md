@@ -67,7 +67,7 @@ There is also a list of all answered and pending requests related to your datase
 
 ## 3 Published Datasets
 
-The owners decide when and under which licence a dataset should be published. BETA-FOR datasets should be published not later than 3 years after the end of data collection/compilation. In exceptional cases, after 5 years (see Publication Policy).
+The owners of a dataset decide when and under which licence it should be published. BETA-FOR datasets should be published not later than 3 years after the end of data collection/compilation. In exceptional cases, after 5 years (see Publication Policy).
 
 Published datasets are freely available and can be viewed and downloaded by anyone (not just project members). 
 
