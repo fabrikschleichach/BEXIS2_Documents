@@ -15,8 +15,9 @@
 * Stop the current Site via IIS
 
 ## 2 Database
-* **Backup** *current* (PostgreSQL) db 
-* Create *new* (PostgreSQL) db (BEXIS2_v---)
+* **Backup** *current* (PostgreSQL) db
+* Rename *current* (PostgreSQL) db: BEXIS_v--- 
+* Create *new* (PostgreSQL) db (BEXIS)
 * **Restore** *new* db with backup
 * **Refresh** *new* db
 
