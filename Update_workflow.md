@@ -40,7 +40,7 @@
 	* ```<add key="TenantId" value="betafor" />```
 	* ```<add key="SystemEmail" value="betafor@uni-wuerzburg.de" />```
 	* ```<add key="usePersonEmailAttributeName" value="true" />```
-	
+* Save the Site/Web.config.sample as Site/Web.config
 * Copy *current* **Data** 
 * Copy *current* **Workspace**  
 * Update Workspace (if it`s needed)
