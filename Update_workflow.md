@@ -32,22 +32,23 @@
 * Create a new folder (BEXIS2_v---) in C:\inetpub\wwwroot and change to this directory
 * Copy *new* **Site**  
 * Take the *new* **Site/Web.config.sample** and fill in the following parameter:
-	* <add name="ApplicationServices" connectionString="Server=wrzh088.uni-wuerzburg.eu;Port=5432;Database=BEXIS;Userid=postgres;Password=1;Pooling=true;MinPoolSize=2;MaxPoolSize=100;ConnectionIdleLifetime=3600;" />
-	* <add key="ApplicationName" value="BETA-FOR Data" />
-	* <add key="CreateDatabase" value="false" />
-	* <add key="WorkspacePath" value="{WORKSPACE}" />
-	* <add key="DataPath" value="{DATA}" />
-	* <add key="TenantId" value="betafor" />
-	* <add key="SystemEmail" value="betafor@uni-wuerzburg.de" />
-	* <add key="usePersonEmailAttributeName" value="true" />
-	
 
+	* ```<add name="ApplicationServices" connectionString="Server=wrzh088.uni-wuerzburg.eu;Port=5432;Database=BEXIS;Userid=postgres;Password=1;Pooling=true;MinPoolSize=2;MaxPoolSize=100;ConnectionIdleLifetime=3600;" />```
+	* ```<add key="ApplicationName" value="BETA-FOR Data" />```
+	* ```<add key="CreateDatabase" value="false" />```
+	* ```<add key="WorkspacePath" value="{WORKSPACE}" />```
+	* ```<add key="DataPath" value="{DATA}" />```
+	* ```<add key="TenantId" value="betafor" />```
+	* ```<add key="SystemEmail" value="betafor@uni-wuerzburg.de" />```
+	* ```<add key="usePersonEmailAttributeName" value="true" />```
+	
 * Copy *current* **Data** 
 * Copy *current* **Workspace**  
-* Update Workspace (if it is needed)
+* Update Workspace (if it`s needed)
 
 ## 4 Security settings
 * Set security settings (if it`s needed) for Data, Workspace and Site 
+
 ![grafik](https://user-images.githubusercontent.com/68608907/235126020-bb9dccc1-5815-4871-b136-863c203cf651.png)
 
 ## 5 IIS
