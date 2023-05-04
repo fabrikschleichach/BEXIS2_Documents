@@ -5,8 +5,7 @@
 - [2 Database](#2-database)
 - [3 File system](#3-file-system)
 - [4 Security settings](#4-security-settings)
-- [5 IIS](#5-IIS)
-- [6 Testing](#6-Testing)
+- [5 Testing](#5-Testing)
 
 <!-- /TOC -->
 
@@ -51,15 +50,7 @@
 
 ![grafik](https://user-images.githubusercontent.com/68608907/235126020-bb9dccc1-5815-4871-b136-863c203cf651.png)
 
-## 5 IIS
-* Open Application Settings 
-  * **DataPath** = C:\inetpub\wwwroot\BEXIS2_v---\Data
-  * **WorkspacePath** = C:\inetpub\wwwroot\BEXIS2_v---\Workspace
-  * **CreateDatabase** = false 
- 
-![grafik](https://user-images.githubusercontent.com/68608907/235127702-c16a0be9-5b56-47ab-9a47-dd96da637d3b.png)
-
-## 6 Testing
+## 5 Testing
 * Start the Site
 * Test functions
 
