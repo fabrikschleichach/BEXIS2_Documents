@@ -17,9 +17,16 @@
 ## 2 Database
 * **Backup** *current* (PostgreSQL) db
 * Rename *current* (PostgreSQL) db: BEXIS_v--- 
-* Create *new* (PostgreSQL) db (BEXIS)
+* Create *new* (PostgreSQL) db: BEXIS
 * **Restore** *new* db with backup
-* **Refresh** *new* db
+* Update *new* db with Update_Script:
+		* Right-click on BEXIS and click on CREATE Script
+ 	* Open Update_Script
+  * Click on Execute
+		
+![grafik](https://user-images.githubusercontent.com/68608907/236138033-6ca678b2-ac88-4328-85b6-9791cac5b282.png)
+![grafik](https://user-images.githubusercontent.com/68608907/236138629-7a9fcea6-275b-42df-84c5-d5f9fc465653.png)
+
 
 ## 3 File system
 * Create a new folder (BEXIS2_v---) in C:\inetpub\wwwroot and change to this directory
@@ -30,12 +37,11 @@
 * Update Workspace (if it is needed)
 
 ## 4 Security settings
-* Set security settings (if it is needed) for Data, Workspace and Site 
+* Set security settings (if it`s needed) for Data, Workspace and Site 
 ![grafik](https://user-images.githubusercontent.com/68608907/235126020-bb9dccc1-5815-4871-b136-863c203cf651.png)
 
 ## 5 IIS
-* Create a new website (BEXIS2_v---) on a test port
-* Open Application Settings:
+* Open Application Settings 
   * **DataPath** = C:\inetpub\wwwroot\BEXIS2_v---\Data
   * **WorkspacePath** = C:\inetpub\wwwroot\BEXIS2_v---\Workspace
   * **CreateDatabase** = false 
@@ -43,9 +49,7 @@
 ![grafik](https://user-images.githubusercontent.com/68608907/235127702-c16a0be9-5b56-47ab-9a47-dd96da637d3b.png)
 
 ## 6 Testing
-* Start the new Site
-* Test functions on the server 
-* Change the port to the correct one
-* Test functions on normal browser out of server
+* Start the Site
+* Test functions
 
 Finished!
