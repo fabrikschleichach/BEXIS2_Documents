@@ -93,8 +93,8 @@ You can create a copy of a data structure, whether it is Tabular or File (struct
 
 You can download a Data Structure as Excel template in two ways:
 
-1) On the page Data Structure management, click on the Download button next to a Data Structure.
-2) On the Edit Data Structure page, click the Download Excel Template button. BEXIS 2 creates an Excel Template from the current Data Structure.
+1) On the page Data Structure Search, click on the Download button next to a Data Structure.
+2) On the Data Structure Edit page, click the Download Excel Template button. BEXIS 2 creates an Excel Template from the current Data Structure.
 
 Save the Excel Template to your preferred location on your computer.
 
