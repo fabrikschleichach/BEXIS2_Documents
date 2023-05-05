@@ -126,7 +126,7 @@ An Excel template is an Excel file that includes all the information about its u
 Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, choose the option "Enable content". 
 Macro security settings are generally located in the Trust Center.
 
-![Enable Macro](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/Help_img6.png) 
+![Makros aktivieren](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Makros_aktivieren.PNG)
 
 ## 3 Variable Templates
 
