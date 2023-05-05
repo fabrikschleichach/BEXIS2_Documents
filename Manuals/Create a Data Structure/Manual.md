@@ -59,7 +59,7 @@ Then select the Tabular option. Enter a name and a description and click on the 
 
 BEXIS2 will now refer you to the tool with which you can build your data structure by adding variables.
 
-![Edit Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Data_Structure.PNG)
+![Edit Data Structure new](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Data_Structure_new.PNG)
 
 
 Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR. If there`s no variable template that fits to your data yet, you can [create a new one](#33-create-a-variable-template).
@@ -99,16 +99,24 @@ You can edit an existing Data Structure by clicking on the edit button.
 
 ### 2.3 Create a copy of a Data Structure
 
-You can create a copy of a data structure, whether it is Tabular or File (structured or unstructured), by clicking on the _Save as_ button. Just change the name of the copy.
+You can create a copy of a data structure, whether it is Tabular or File (structured or unstructured), in two ways:
 
-![Copy Data Structure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/copy_data_structure.png) 
+1) On the page *Data Structure Search*, click on the _Copy_ button next to a Data Structure.
+2) On the *Data Structure Edit* page, click the _Save as_ button. 
+
+Just change the name of the copy.
+
+![Copy Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Copy_Data_Structure.PNG)
+
 
 ### 2.4 Download an Excel template
 
 You can download a Data Structure as Excel template in two ways:
 
-1) On the page Data Structure Search, click on the Download button next to a Data Structure.
-2) On the Data Structure Edit page, click the Download Excel Template button. BEXIS 2 creates an Excel Template from the current Data Structure.
+1) On the page *Data Structure Search*, click on the _Download_ button next to a Data Structure.
+2) On the *Data Structure Edit* page, click the _Download Excel Template_ button. BEXIS 2 creates an Excel Template from the current Data Structure.
+
+![Download Excel Template](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Download_Excel_Template.PNG)
 
 Save the Excel Template to your preferred location on your computer.
 
