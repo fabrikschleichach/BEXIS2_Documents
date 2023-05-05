@@ -43,7 +43,7 @@ If you want to upload tabular data to the system, there must be a corresponding 
 
 Data Structures contain Variables, which are specific instances of [Variable Templates](#3-variable-templates). A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. For every column of your tabular data you have to define a variable. 
 
-![image](https://user-images.githubusercontent.com/68608907/232013885-99b17aed-9d5d-4143-b3f4-921e7b86f240.png)
+![Variables_VariableTemplates](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Variables_VariableTemplates.PNG)
 
 ### 2.1 Create a Data Structure
 
