@@ -165,14 +165,14 @@ Click on the Save button and the Unit is stored if all information is correct an
 
 Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) to edit and ![img13](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) to delete a Unit.
 
-![Create Unit](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_unit.png) 
+![Create Unit](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Unit.PNG)
 
 
 ### 3.3 Create a Variable Template
 
 If there is not yet a variable template, that fits to your data, you can email your data manager (betafor@uni-wuerzburg.de) or create one on your own. 
 
-![Create Variable templates](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_variable.png) 
+![Create Variable Template](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Variable_Template.PNG)
 
 To create a Variable Template, click on the Create Variable Template button and fill in the fields:
 
