@@ -47,9 +47,15 @@ Data Structures contain Variables, which are specific instances of [Variable Tem
 
 ### 2.1 Create a Data Structure
 
-Click on Create Data Structure from *Plan > Manage Data Structures*, and then select the Tabular option. Enter a name and a description and click on the Save button. 
+Click on Create Data Structure from *Plan > Manage Data Structures*. 
 
-![Create Datastructure](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/create_data_structure.png) 
+![Plan](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Plan.PNG)
+
+![Create Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Data_Structure.PNG)
+
+Then select the Tabular option. Enter a name and a description and click on the Save button.
+
+![Create Data Structure 2](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Data_Structure_2.PNG)
 
 BEXIS2 will now refer you to the tool with which you can build your data structure by adding variables.
 
