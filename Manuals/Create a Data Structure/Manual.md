@@ -76,7 +76,7 @@ A variable can be deleted from a structure by clicking on the trash button.
 
 If the *Optional* checkbox is selected, the variable/column of your tabular data can have empty entries.
 
-You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.
+You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.Cancel changes
 
 ![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
 
@@ -91,7 +91,11 @@ Every BETA-FOR Dataset should contain these two Variables:
 
 ### 2.2 Edit a Data Structure
 
-**A Data Structure cannot be changed anymore (or deleted) once it is linked to a dataset!!!**
+You can edit an existing Data Structure by clicking on the edit button.
+
+![Edit Button](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Button.PNG)
+
+**BUT: A Data Structure cannot be changed anymore (or deleted) once it is linked to a dataset!!!**
 
 ### 2.3 Create a copy of a Data Structure
 
