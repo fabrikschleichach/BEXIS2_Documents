@@ -59,12 +59,16 @@ Then select the Tabular option. Enter a name and a description and click on the 
 
 BEXIS2 will now refer you to the tool with which you can build your data structure by adding variables.
 
-![Add Variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/add_variables.png)
+![Edit Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Data_Structure.PNG)
+
+
 Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR. If there`s no variable template that fits to your data yet, you can [create a new one](#33-create-a-variable-template).
 
 Always provide some date and time information (in ISO 8601 standard). 
 
-When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific. 
+When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific.
+
+![Change Name](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Change_Name.PNG)
 
 You can change the order of the variables by dragging and dropping them. 
 
