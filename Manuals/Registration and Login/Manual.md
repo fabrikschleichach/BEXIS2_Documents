@@ -26,7 +26,7 @@ You will then receive a system email asking you to confirm your email address:
 
 ![Confirm_Pwd](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Confirm_Pwd.PNG)
 
-When you click on the confirmation link, BEXIS2 will open in your default browser. Please provide some personal information: 
+When you click on the confirmation link, BEXIS2 will open in your default browser and ask you to provide some personal information: 
 
 ![Personal_Information](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Personal_Information.PNG)
 
