@@ -289,7 +289,7 @@ Select a file from your local computer or pick a file that has already been uplo
 
 BEXIS2 supports the following file formats:
 
-![Select File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/select_file.png)
+
 
 Note, that the maximum supported file size is: **1024 MB**. If your file is larger than that, store it at ... and refer to the external storage location in the metadata / ![Alternate identifiers](38-alternate-identifiers). 
 
@@ -300,7 +300,7 @@ If your file is larger than 4 MB, use the ![*Push Big File*](#42-push-big-file) 
 If you have a large file (> 4 MB), upload it to the server first. For this case, every user has a personal folder where files can be stored temporarily. 
 Files that are stored here, can be selected via the ![upload wizard](#4-upload-data) and loaded into the BEXIS2 environment.
 
-![Push Big File](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/push_big_file.png)
+![push_big_file](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/push_big_file.png)
 
 ### 4.3. Upload Tabular Data
 
@@ -320,9 +320,9 @@ The optimal workflow would be as follows:
 
 Select a file from your local computer or a file that you have uploaded to the server before you started the Upload Wizard. The latter option, called ![*Push Big File*](#42-push-big-file), is intended for files larger than 4 MB, which can take several minutes to transfer. 
 
-Click the Next button to proceed to the next step.
+Click the _Next_ button to proceed to the next step.
 
-![Upload_Tabular](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/upload_tabular.jpg) 
+![select_file](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/select_file.png) 
 
 #### 4.3.2 Get File Information
 
@@ -336,13 +336,13 @@ If you have selected a BEXIS2 Excel template, the data structure and format info
 
 If your data is a (normal) Excel file, you have to specify the Header and Data part of your table.  
 
-![grafik](https://user-images.githubusercontent.com/68608907/234516538-842f6da1-0a62-4c6f-b4db-8ff897ecf9d3.png)
+![Get_File_Information_fresh](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Get_File_Information_fresh.PNG)
 
 Select the header part and click on *Header*.
 Do the same with the data part. If you have a large file with lots of rows, select only the first data row and click on *Expand Selection*.
 You can reset your selection by clicking on *Reset*. 
 
-![grafik](https://user-images.githubusercontent.com/68608907/234517848-d645c908-17b9-4645-b81b-93fe7ce3c7d2.png)
+![Get_File_Information](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Get_File_Information.PNG)
 
 Finally click on the Next button to proceed.
 
@@ -366,13 +366,18 @@ If you want to upload an ASCII file, you need to provide some information about 
 
 Select a dataset from the dropdown list (if it is not preselected). Click on Next.
 
-![grafik](https://user-images.githubusercontent.com/68608907/234519266-52d2457d-9150-4a1a-8160-ac4f776e720f.png)
+![Specify_Dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Specify_Dataset.PNG)
 
 #### 4.3.4 Validation
 
-By clicking on the Validate button, the file will be validated against the selected data structure. 
+By clicking on the _Validate_ button, the file will be validated against the selected data structure. 
 
-![grafik](https://user-images.githubusercontent.com/68608907/234524007-5f993d90-116c-4911-a453-e3b8e6e5db5e.png)
+![Validate](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Validate.PNG)
+
+If you get an error message, fix the problem and try to upload the data again. 
+
+![Validation_Error](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Validation_Error.PNG)
+
 
 What will be checked?
 
@@ -380,7 +385,8 @@ What will be checked?
 * Completeness and order of the variables
 * Constraints (Range, Pattern, Domain)
 
-If you get an error message, fix the problem and try to upload the data again. 
+![grafik](https://user-images.githubusercontent.com/68608907/234524007-5f993d90-116c-4911-a453-e3b8e6e5db5e.png)
+
 
 #### 4.3.5 Summary
 
