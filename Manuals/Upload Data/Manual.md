@@ -64,9 +64,9 @@ Select a Data Structure that fits to your data.
 
 Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it now (check the "Create a Data Structure"-Manual).
 
-![Choose_Data_Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Choose_Data_Structure.PNG)
-
 Finally, select DataCite_bexis as Metadata Structure and click the Next button.
+
+![Choose_Data_Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Choose_Data_Structure.png)
 
 
 ## 3 Provide some Metadata
@@ -89,7 +89,7 @@ The metadata form contains different icons. Here is an explanation:
 
 ![Help](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/help.png)   	Show help information. The button on the right top hides / shows all help information. 
 
-There are some fields, e.g. *Identifier*, that cannot be selected because they are set automatically by the system.
+Some fields, e.g. *Identifier*, cannot be selected because they are set automatically by the system.
 Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from autocomplete list.”. In this case, you may only enter the first letter of the item and the system will automatically complete it.
 
 At the bottom of the page there is a button titled Validate, which can be used to check whether the required attributes have been filled in and the inputs match the expected data format. 
@@ -264,10 +264,21 @@ If your data has been published in a journal, you can share this information by 
 
 In BEXIS2, you can only upload your (primary) data as part of a dataset. If you have not created a dataset yet, [do it now](#2-create-a-dataset). 
 
-There are 2 ways to upload (primary) data:
+There are 2 ways to start the upload process:
 
-* Click the **Primary Data** tab in the dataset details view.
-* Select **Upload Data** in the Collect menu.
+1) Click the **Primary Data** tab in the dataset details view ...
+
+![Tab_Primary_Data](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Tab_Primary_Data.PNG)
+
+ ... and click on _Upload_.
+ 
+ ![Tab_Primary_Data_2](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Tab_Primary_Data_2.PNG)
+
+
+2) Select **Upload Data** in the Collect menu.
+
+
+
 
 In the next step you have to specify whether your (primary) data is structured (tabular data) or unstructured (file).
 
