@@ -12,7 +12,7 @@
 
 The registration form is accessible via the Register button on the upper right side. 
 
-![registration](https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/register.png)
+![Registration](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Registration.PNG)
 
 All fields of the form are mandatory.
 
@@ -22,7 +22,7 @@ Don`t forget to check the checkbox “I accept Terms and Conditions” (= Public
 
 You will then receive a system email asking you to confirm your email address:
 
-![image](https://user-images.githubusercontent.com/68608907/231978528-8a6de92c-e3b7-43f7-9a7b-d7dfe9bc0e18.png)
+![Personal_Information](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Personal_Information.PNG)
 
 When you click on the confirmation link, BEXIS2 will open in your default browser. Please provide some personal information: 
 
@@ -45,7 +45,7 @@ Finish your registration by clicking on the "Save" button. You will receive an e
 
 Press the *Login* button on the upper right side. BEXIS2 redirects you to the login form, where you have to enter your account credentials (email or user name and password). If the login is successful, the start page (e.g., *Dashboard* or *Search*) is loaded. Otherwise, you will see information about the status and reason for the failed login.
 
-<a href="url" title="login"><img src="https://github.com/BEXIS2/Documents/raw/master/Manuals/SAM/Images/login.png" align="center" height="300" ></a>
+![Login](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Login.PNG)
 
 
 
