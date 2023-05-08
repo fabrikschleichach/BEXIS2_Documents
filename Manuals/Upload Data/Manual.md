@@ -52,19 +52,19 @@ You can upload a file or tabular data to the system in three steps:
 
 ## 2 Create a Dataset
 
-Select the Collect menu and click on Create Dataset. 
+Select the Collect menu and click on Create Dataset.
 
-![CreateDataset](https://user-images.githubusercontent.com/68608907/233044507-d88d6393-2693-4841-ac2b-91f76962f3c5.PNG)
+![Create_Dataset_Button](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Create_Dataset_Button.PNG)
 
 You can either create a new Dataset or select an existing one to copy its metadata.  
 
-![NewDataset](https://user-images.githubusercontent.com/68608907/233046860-ba247d11-0149-4c0a-9e61-6b5079e15885.PNG)
+![New_Dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/New_Dataset.PNG)
 
 Select a Data Structure that fits to your data.
 
 Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it now (check the "Create a Data Structure"-Manual).
 
-![grafik](https://user-images.githubusercontent.com/68608907/233047930-2b1cf861-6269-428b-9f2f-3ad3afdd29ae.png)
+![Choose_Data_Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Choose_Data_Structure.PNG)
 
 Finally, select DataCite_bexis as Metadata Structure and click the Next button.
 
