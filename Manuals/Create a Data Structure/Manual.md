@@ -23,7 +23,7 @@
 
 ## 1 Overview
 
-In BEXIS2, data is stored and managed as part of a **dataset**. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other. 
+In BEXIS2, data is stored and managed as part of a **Dataset**. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other. 
 
 ![image](https://user-images.githubusercontent.com/68608907/232004312-0192043f-03be-4b11-b8bf-01e935f9f40b.png)
 
@@ -55,22 +55,20 @@ Navigate to *Plan > Manage Data Structures* ...
 
 ![Create Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Data_Structure.PNG)
 
-Then select the Tabular option. Enter a name and a description and click on the Save button.
+Then select the Tabular option. Enter a name and a description and click on the _Save_ button.
 
 ![Create Data Structure 2](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Data_Structure_2.PNG)
 
-BEXIS2 will now refer you to the tool with which you can build your data structure by adding variables.
+BEXIS2 will now refer you to the tool with which you can create your data structure by adding variables.
 
 ![Edit Data Structure new](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Data_Structure_new.PNG)
 
 
-Choose - if possible - a variable template starting with an uppercase letter. These have been defined especially for BETA-FOR. If there`s no variable template that fits to your data yet, you can [create a new one](#33-create-a-variable-template).
+Choose - if possible - a variable template starting with an uppercase letter. These have been especially defined for BETA-FOR. If there`s no variable template that fits to your data, call your metadata manager (betafor@uni-wuerzburg.de) or [create a new one](#33-create-a-variable-template) on your own.
 
 When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific.
 
 ![Change Name](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Change_Name.PNG)
-
-Always provide some date and time information (in ISO 8601 standard). 
 
 You can change the order of the variables by dragging and dropping them. 
 
@@ -89,7 +87,9 @@ Every BETA-FOR Dataset should contain these two Variables:
 | Variable Name		| Possible Values	| Why mandatory?	| Example	|
 |----------------------	|-----------------------|----------------------|---------------|
 |**PatchLabel_BETAFOR**	| 			| Link to the detailed geographic information in a separate Dataset. | U03EAB003 |
-|**Treatment_present**	| true, false		| Indicates if the treatment was already present when the data was collected. | true |
+|**Treatment_present**	| true, false		| Indicates if the BETA-FOR treatment was already present when the data was collected. | true |
+
+Make sure that your dataset contains some date and time information (in ISO 8601 standard). 
 
 ### 2.2 Edit a Data Structure
 
@@ -97,7 +97,7 @@ You can edit an existing Data Structure by clicking on the edit button.
 
 ![Edit Button](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Button.PNG)
 
-**BUT: A Data Structure cannot be changed anymore (or deleted) once it is linked to a dataset!!!**
+**!!! A Data Structure cannot be changed anymore (or deleted) once it is linked to a dataset !!!**
 
 ### 2.3 Create a copy of a Data Structure
 
@@ -123,7 +123,7 @@ You can download a Data Structure as Excel template in two ways:
 Save the Excel Template to your preferred location on your computer.
 
 ### 2.5 Work with an Excel template
-An Excel template is an Excel file that includes all the information about its underlying Data Structure. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
+An Excel template is an Excel file that includes the Data Structure information. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
 
 Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, choose the option "Enable content". 
 
@@ -164,7 +164,7 @@ If the Unit you require is not yet part of the unit list, you can create it by c
 
 Select at least one Data Type from the list.
 
-Click on the Save button and the Unit is stored if all information is correct and it is not a duplicate.
+Click on the _Save_ button and the Unit is stored if all information is correct and it is not a duplicate.
 
 Use ![img12](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/edit_button.png) to edit and ![img13](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/delete_button.png) to delete a Unit.
 
@@ -177,11 +177,11 @@ If there is not yet a variable template, that fits to your data, you can email y
 
 ![Create Variable Template](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Variable_Template.PNG)
 
-To create a Variable Template, click on the Create Variable Template button and fill in the fields:
+To create a Variable Template, click on the _Create Variable Template_ button and fill in the fields:
 
 **Name**
 
-As most of our Variable Templates are based on Darwin Core Terms, it would be great, if you could search for a suitable name/term in the [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/). 
+As most of our Variable Templates are based on Darwin Core Terms, it would be great, if you could search for a suitable name/term in the [Darwin Core Quick Reference Guide](https://dwc.tdwg.org/terms/) first. 
 
 Otherwise ...
 
