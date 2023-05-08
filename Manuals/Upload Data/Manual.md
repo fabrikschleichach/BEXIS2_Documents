@@ -275,14 +275,13 @@ There are 2 ways to start the upload process:
  ![Tab_Primary_Data_2](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Tab_Primary_Data_2.PNG)
 
 
-2) Select **Upload Data** in the Collect menu.
+2) Or select **Upload Data** in the Collect menu ...
 
+![upload_data](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/upload_data.png)
 
+... and specify whether your (primary) data is structured (tabular data) or unstructured (file).
 
-
-In the next step you have to specify whether your (primary) data is structured (tabular data) or unstructured (file).
-
-![Upload Data](https://github.com/BEXIS2/Documents/raw/master/Manuals/DCM/Images/upload_data.png)
+![Upload_Data_2](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Upload_Data_2.PNG)
 
 ### 4.1 Upload File 
 
