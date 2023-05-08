@@ -34,7 +34,7 @@
 
 ## 1 Overview
 
-In BEXIS2, data is stored and managed as part of a dataset. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other.
+In BEXIS2, data is stored and managed as part of a **Dataset**. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other.
 
 ![grafik](https://user-images.githubusercontent.com/68608907/233026141-c3e39d31-be31-46c5-924b-18d11406d5d7.png)
 
