@@ -49,9 +49,12 @@ Press the _Login_ button on the upper right side.
 
 ![Login_Button](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Login_Button.PNG)
 
-BEXIS2 redirects you to the login form, where you have to enter your account credentials (email or user name and password). If the login is successful, the start page (*Search*) is loaded. Otherwise, you will see information about the status and reason for the failed login.
+BEXIS2 redirects you to the login form, where you have to enter your account credentials (email or user name and password). 
 
 ![Login](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Login.PNG)
+
+If the login is successful, the start page (*Search*) is loaded and your username replaces the _Register_ and _Login_ menu on the upper right side. Otherwise, you will see information about the status and reason for the failed login.
+
 
 
 
