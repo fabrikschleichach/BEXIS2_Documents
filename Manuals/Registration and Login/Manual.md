@@ -22,11 +22,9 @@ Don`t forget to check the checkbox “I accept Terms and Conditions” (= Public
 
 You will then receive a system email asking you to confirm your email address:
 
-![Personal_Information](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Personal_Information.PNG)
-
 When you click on the confirmation link, BEXIS2 will open in your default browser. Please provide some personal information: 
 
-![image](https://user-images.githubusercontent.com/68608907/231980708-f10916df-2393-49fe-843f-6b05bfb00363.png)
+![Personal_Information](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Personal_Information.PNG)
 
 Please fill in at least the following fields:
 * First Name
