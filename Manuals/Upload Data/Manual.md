@@ -52,7 +52,7 @@ You can upload a file or tabular data to the system in three steps:
 
 ## 2 Create a Dataset
 
-Select the Collect menu and click on Create Dataset.
+Select the _Collect_ menu and click on _Create Dataset_.
 
 ![Create_Dataset_Button](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Create_Dataset_Button.PNG)
 
@@ -64,12 +64,14 @@ Select a Data Structure that fits to your data.
 
 Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it now (check the "Create a Data Structure"-Manual).
 
-Finally, select DataCite_bexis as Metadata Structure and click the Next button.
+Finally, select DataCite_bexis as Metadata Structure and click the _Next_ button.
 
 ![Choose_Data_Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Choose_Data_Structure.png)
 
 
 ## 3 Provide some Metadata
+
+![Metadata](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Metadata.PNG)
 
 ### 3.1 General Information
 
@@ -92,9 +94,9 @@ The metadata form contains different icons. Here is an explanation:
 Some fields, e.g. *Identifier*, cannot be selected because they are set automatically by the system.
 Other fields, e.g. *Publisher*, have a note: “If possible, use an entry from autocomplete list.”. In this case, you may only enter the first letter of the item and the system will automatically complete it.
 
-At the bottom of the page there is a button titled Validate, which can be used to check whether the required attributes have been filled in and the inputs match the expected data format. 
+At the bottom of the page there is a button titled _Validate_, which can be used to check whether the required attributes have been filled in and the inputs match the expected data format. 
 
-You can edit a submitted dataset or make a copy of that by clicking the Edit or Copy buttons.
+You can edit a submitted dataset or make a copy of that by clicking the _Edit_ or _Copy_ buttons.
 
 If an input is wrong or missing, the corresponding field is highlighted in red. 
 
@@ -289,15 +291,15 @@ Select a file from your local computer or pick a file that has already been uplo
 
 BEXIS2 supports the following file formats:
 
-
+![select_file](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/select_file.png)
 
 Note, that the maximum supported file size is: **1024 MB**. If your file is larger than that, store it at ... and refer to the external storage location in the metadata / ![Alternate identifiers](38-alternate-identifiers). 
 
-If your file is larger than 4 MB, use the ![*Push Big File*](#42-push-big-file) function.
+If your file is **larger than 4 MB**, use the ![*Push Big File*](#42-push-big-file) function.
 
 ### 4.2 Push Big File
 
-If you have a large file (> 4 MB), upload it to the server first. For this case, every user has a personal folder where files can be stored temporarily. 
+If you have a large file (> 4 MB), upload it to the server first. For this case, every user has a **personal folder** where files can be stored temporarily. 
 Files that are stored here, can be selected via the ![upload wizard](#4-upload-data) and loaded into the BEXIS2 environment.
 
 ![push_big_file](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/push_big_file.png)
@@ -344,7 +346,7 @@ You can reset your selection by clicking on *Reset*.
 
 ![Get_File_Information](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Get_File_Information.PNG)
 
-Finally click on the Next button to proceed.
+Finally click on the _Next_ button to proceed.
 
 ##### 4.3.2.3 ASCII file
 
@@ -364,7 +366,7 @@ If you want to upload an ASCII file, you need to provide some information about 
 
 #### 4.3.3 Specify Dataset
 
-Select a dataset from the dropdown list (if it is not preselected). Click on Next.
+Select a dataset from the dropdown list (if it is not preselected). Click on _Next_.
 
 ![Specify_Dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Specify_Dataset.PNG)
 
