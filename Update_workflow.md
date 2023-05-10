@@ -5,7 +5,8 @@
 - [2 Database](#2-database)
 - [3 File system](#3-file-system)
 - [4 Security settings](#4-security-settings)
-- [5 Testing](#5-Testing)
+- [5 Modifications](#5-modifications)
+- [6 Testing](#5-Testing)
 
 <!-- /TOC -->
 
@@ -32,7 +33,7 @@
 * Copy *new* **Site**  
 * Take the *new* **Site/Web.config.sample** and fill in the following parameter:
 
-	* ```<add name="ApplicationServices" connectionString="Server=wrzh088.uni-wuerzburg.eu;Port=5432;Database=BEXIS;Userid=postgres;Password=1;Pooling=true;MinPoolSize=2;MaxPoolSize=100;ConnectionIdleLifetime=3600;" />```
+	* ```<add name="ApplicationServices" connectionString="{SERVER}" />```
 	* ```<add key="ApplicationName" value="BETA-FOR Data" />```
 	* ```<add key="CreateDatabase" value="false" />```
 	* ```<add key="WorkspacePath" value="{WORKSPACE}" />```
@@ -40,17 +41,19 @@
 	* ```<add key="TenantId" value="betafor" />```
 	* ```<add key="SystemEmail" value="betafor@uni-wuerzburg.de" />```
 	* ```<add key="usePersonEmailAttributeName" value="true" />```
+	
 * Save the Site/Web.config.sample as Site/Web.config
 * Copy *current* **Data** 
 * Copy *current* **Workspace**  
 * Update Workspace (if it`s needed)
 
 ## 4 Security settings
-* Set security settings (if it`s needed) for Data, Workspace and Site 
+* Set security settings (if it`s needed) for Data, Workspace and Site.
 
-![grafik](https://user-images.githubusercontent.com/68608907/235126020-bb9dccc1-5815-4871-b136-863c203cf651.png)
+## 5 Modifications
+* Copy \Documents\BEXIS2_Images to \Site\Content\Images.
 
-## 5 Testing
+## 6 Testing
 * Start the Site
 * Test functions
 
