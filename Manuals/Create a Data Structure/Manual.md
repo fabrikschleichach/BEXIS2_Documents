@@ -70,7 +70,7 @@ When you click the arrow button next to a variable template, the variable will b
 
 ![Change Name](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Change_Name.PNG)
 
-You can change the order of the variables by dragging and dropping them. 
+You can change the order of the variables by dragging and dropping them. If you cannot drag a variable click _Save_ and try again. 
 
 A variable can be deleted from a structure by clicking on the trash button.
 
