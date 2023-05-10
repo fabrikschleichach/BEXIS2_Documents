@@ -186,15 +186,15 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 
 The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
 
-To refer to the geographic information dataset use **IsSupplementedyBy** as @relationType.
+To refer to the geographic information dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9) use **IsSupplementedyBy** as @relationType.
 
 Note: If you enter the field *Related Identifier*, a link is created in both directions, based on the current versions of the datasets.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
+| Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Patches_2022/2023 |
 | @Related identifier type 	| Default is **URL**. 		| URL		|
-| @Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | Compiles |
+| @Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | IsSupplementedBy |
 
 ### 3.10 Formats
 
@@ -206,12 +206,31 @@ Some common formats:
 
 | File extension| iana media type |
 |---------------|-----------------|
-| .xlsx		| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
-| .xls		| application/vnd.ms-excel |
+| .bin		| application/octet-stream |
 | .csv		| text/csv |
-| .jpg		| image/jpg |
+| .doc		| application/msword |
+| .docx 	| application/vnd.openxmlformats-officedocument.wordprocessingml.document |
+| .jpeg, .jpg	| image/jpg |
+| .gif		| image/gif |
+| .html		| text/html |
+| .mp3		| audio/mpeg |
+| .mp4        	| video/mp4 |
+| .ods		| application/vnd.oasis.opendocument.spreadsheet |
+| .odt		| application/vnd.oasis.opendocument.text |
+| .pdf		| application/pdf |
 | .png		| image/png |
+| .ppt		| application/vnd.ms-powerpoint |
+| .pptx		| application/vnd.openxmlformats-officedocument.presentationml.presentation |
+| .svg		| image/svg+xml |
+| .tar		| application/x-tar |
+| .tif, .tiff 	| image/tiff |
 | .txt		| text/plain |
+| .wav		| audio/wav |
+| .xls		| application/vnd.ms-excel |
+| .xlsx		| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+| .zip		| application/zip |
+| .7z		| application/x-7z-compressed |
+
 
 ### 3.11 Rights List
 
@@ -380,6 +399,9 @@ If you get an error message, fix the problem and try to upload the data again.
 
 ![Validation_Error](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Validation_Error.PNG)
 
+Finally you will get the message *Succesfully validated*.
+
+![Validation_Succesful](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Validation_Succesful.PNG)
 
 What will be checked?
 
@@ -392,7 +414,9 @@ What will be checked?
 
 #### 4.3.5 Summary
 
-In this last step, a summary of the uploaded file is displayed. Please review the information and click the Finish button to confirm and complete the upload.
+In this last step, a summary of the uploaded file is displayed. Please review the information and click the _Finish_ button to confirm and complete the upload.
+
+![Summary](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Images/Summary.PNG)
 
 
 [Go to top](#1-overview)
