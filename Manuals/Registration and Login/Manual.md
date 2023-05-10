@@ -53,7 +53,7 @@ BEXIS2 redirects you to the login form, where you have to enter your account cre
 
 ![Login](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Login.PNG)
 
-If the login is successful, the start page (*Search*) is loaded and your username replaces the _Register_ and _Login_ menu on the upper right side. 
+If your login was successful, the start page (*Search*) is loaded and your username replaces the _Register_ and _Login_ menu on the upper right side. 
 
 ![Logged_In](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Logged_In.PNG)
 
