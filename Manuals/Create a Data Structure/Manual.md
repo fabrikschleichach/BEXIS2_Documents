@@ -51,7 +51,7 @@ Navigate to *Plan > Manage Data Structures* ...
 
 ![Plan](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Plan.PNG)
 
-... and click on Create Data Structure.
+... and click on _Create Data Structure_.
 
 ![Create Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Create_Data_Structure.PNG)
 
@@ -64,19 +64,19 @@ BEXIS2 will now refer you to the tool with which you can create your data struct
 ![Edit Data Structure new](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Data_Structure_new.PNG)
 
 
-Choose - if possible - a variable template starting with an uppercase letter. These have been especially defined for BETA-FOR. If there`s no variable template that fits to your data, call your metadata manager (betafor@uni-wuerzburg.de) or [create a new one](#33-create-a-variable-template) on your own.
+Choose - if possible - a variable template starting with an uppercase letter. These have been especially defined for BETA-FOR. If there`s no variable template that fits to your data, email your metadata manager (betafor@uni-wuerzburg.de) or [create a new one](#33-create-a-variable-template) on your own.
 
 When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific.
 
 ![Change Name](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Change_Name.PNG)
 
-You can change the order of the variables by dragging and dropping them. If you cannot drag a variable click _Save_ and try again. 
+You can change the order of the variables by dragging and dropping them. If you cannot drag a variable, click _Save_ and try again. 
 
 A variable can be deleted from a structure by clicking on the trash button.
 
 If the *Optional* checkbox is selected, the variable/column of your tabular data can have empty entries.
 
-You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.Cancel changes
+You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.
 
 ![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
 
