@@ -86,7 +86,7 @@ Every BETA-FOR Dataset should contain these two Variables:
 
 | Variable Name		| Possible Values	| Why mandatory?	| Example	|
 |----------------------	|-----------------------|----------------------|---------------|
-|**PatchLabel_BETAFOR**	| 			| Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9) ). | U03EAB003 |
+|**PatchLabel_BETAFOR**	| 			| Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9). | U03EAB003 |
 |**Treatment_present**	| true, false		| Indicates if the BETA-FOR treatment was already present when the data was collected. | true |
 
 Make sure that your dataset contains some date and time information (in ISO 8601 standard). 
