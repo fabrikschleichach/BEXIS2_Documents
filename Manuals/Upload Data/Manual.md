@@ -62,7 +62,7 @@ You can either create a new Dataset or select an existing one to copy its metada
 
 Select a Data Structure that fits to your data.
 
-Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it now (check the "Create a Data Structure"-Manual).
+Note: Tabular data can only be uploaded to the system if there is a corresponding Data Structure which defines its variables. If you have not created a Data Structure for your data yet, do it ![now](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Manual.md#21-create-a-data-structure).
 
 Finally, select DataCite_bexis as Metadata Structure and click the _Next_ button.
 
