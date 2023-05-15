@@ -17,7 +17,7 @@
 
 In BEXIS2, data is stored and managed as part of a **Dataset**. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other. 
 
-![image](https://user-images.githubusercontent.com/68608907/232004312-0192043f-03be-4b11-b8bf-01e935f9f40b.png)
+![Dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Get%20Started/Images/Dataset.PNG)
 
 * **Metadata**: describing facts about the dataset, e.g. who created the dataset and when
 * **(Primary) Data**: can be files or tabular data
@@ -60,6 +60,8 @@ Workflow for Files (e.g. Images, Audio files, scripts, ...):
 
 If you want to have an overview of all Datasets that have been created so far or if you are looking for some particular data, e.g. of another subproject, go to the _Search_ page.
 
+![Search](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Get%20Started/Images/Search.PNG)
+
 If the checkbox _public only_ is selected, only Datasets that have already been published, are displayed.
 
 You can limit your search results by selecting a Facet. If you, for example, are only interested in Datasets of the project BETA-FOR, select "BETA-FOR".
@@ -72,7 +74,11 @@ If you are not the ![Creator](https://github.com/fabrikschleichach/BEXIS2_Docume
 
 ## 5 Dashboard
 
+![Dashboard](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Get%20Started/Images/Dashboard.PNG)
+
 The Dashboard is like your personal homepage. Here you can find an overview of all your Datasets, your Requests and Requests concerning your Datasets. 
+
+![My Datasets](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Get%20Started/Images/My_Datasets.PNG)
 
 The Datasets are grouped by ![permission](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Dataset%20Permissions/Manual.md#2-unpublished-datasets): 
 * **Own**: full permission, including granting permission
