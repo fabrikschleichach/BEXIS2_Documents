@@ -74,7 +74,7 @@ If you are not the ![Creator](https://github.com/fabrikschleichach/BEXIS2_Docume
 
 The Dashboard is like your personal homepage. Here you can find an overview of all your Datasets, your Requests and Requests concerning your Datasets. 
 
-The Datasets are grouped by permission: 
+The Datasets are grouped by ![permission](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Dataset%20Permissions/Manual.md#2-unpublished-datasets): 
 * **Own**: full permission, including granting permission
 * **Edid**: write permission
 * **Download**: read permission
