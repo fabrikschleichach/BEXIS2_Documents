@@ -13,7 +13,7 @@
 
 ## 1 General Information
 
-*BETA-FOR Data* is the general Data Platform of BETA-FOR. For all data created within BETA-FOR there should be a Dataset in *BETA-FOR Data*. 
+*BETA-FOR Data* is the Data Platform of BETA-FOR. For all data created within BETA-FOR there should be a Dataset in *BETA-FOR Data*. 
 
 In BEXIS2, data is stored and managed as part of a **Dataset**. You can think of a Dataset as a container for the (primary) data on the one hand, and the metadata on the other. 
 
