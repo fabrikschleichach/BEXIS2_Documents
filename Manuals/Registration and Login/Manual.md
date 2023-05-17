@@ -18,7 +18,7 @@ All fields of the form are mandatory.
 
 The username should have a uniform format: first letter of your given name (lowercase) followed by your last name (first letter of your last name in uppercase), e.g. “sKuemmet”.
 
-Don`t forget to check the checkbox “I accept Terms and Conditions” (= Publication Policy) and click on the button _Register_. 
+Don`t forget to select the checkbox “I accept Terms and Conditions” (= Publication Policy) and click on the button _Register_. 
 
 ![Registration](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Registration%20and%20Login/Images/Registration.PNG)
 
