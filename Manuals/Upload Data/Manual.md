@@ -100,15 +100,17 @@ You can edit a submitted dataset or make a copy of that by clicking the _Edit_ o
 
 If an input is wrong or missing, the corresponding field is highlighted in red. 
 
+**Mandatory fields**, that must be filled in, are bold. 
+
 ### 3.2 Basic
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | Identifier			| Will be set automatically.	| 1		|
 | @Identifier type		| Will be set by the data manager.	| DOI	|
-| Publisher			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
+| **Publisher**			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
 | Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
-| Resource Type 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
+| **Resource Type** 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
 | @Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
 | Language			| The Language of the (primary) data. | en 	|
 | Version 			| Will be set automatically. 	| 2		|
@@ -123,7 +125,7 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Creator name			| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
+| **Creator name**		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
 | Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
@@ -136,7 +138,7 @@ The title field is repeatable.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Title 			| Format: **Project_Subproject_Organism_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2021/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
+| **Title** 			| Format: **Project_Subproject_Organism_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2021/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
 | @Title type			| Leave the field empty if there is only one (main) title. | |
 
 To make sure that same things have same naming, pick the Method/Device name from ![here](https://docs.google.com/document/d/1DKHSOQrK5LqxLlfZqJu-fhkgmu5ahpPzNj9slEb2f24/edit?usp=sharing). The bold one is the preferred name. 
