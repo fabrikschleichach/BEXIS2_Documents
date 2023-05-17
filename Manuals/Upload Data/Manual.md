@@ -100,7 +100,7 @@ You can edit a submitted dataset or make a copy of that by clicking the _Edit_ o
 
 If an input is wrong or missing, the corresponding field is highlighted in red. 
 
-**Mandatory fields**, that must be filled in, are bold. 
+There are a few **Mandatory fields**, that must be filled out. The others are strongly recommended.
 
 ### 3.2 Basic
 
