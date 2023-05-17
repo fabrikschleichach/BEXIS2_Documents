@@ -334,9 +334,9 @@ Tabular data - in terms of BEXIS2 - is *structured data*. BEXIS2 supports both E
 It is recommended to use a **BEXIS2 Excel template** (.xslm). 
 
 The optimal workflow would be as follows: 
-1) Create a Data Structure for your tabular data
-2) Download the Data Structure as an Excel template
-3) Fill the template with your data
+1) ![Create a Data Structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Manual.md#21-create-a-data-structure) for your tabular data
+2) Download the Data Structure as an ![Excel template](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Manual.md#24-download-an-excel-template)
+3) ![Fill the template](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Manual.md#25-work-with-an-excel-template) with your data
 4) Upload the filled template
 
 #### 4.3.1 Select File
