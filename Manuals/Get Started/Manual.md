@@ -2,11 +2,11 @@
 
 <!-- TOC -->
 
-- ![1 General Information](#1-general-information)
-- ![2 How to start?](#2-how-to-start?)
-- ![3 Upload Data](#3-upload-data)
-- ![4 Search Data](#4-search-data)
-- ![5 Dashboard](#5-dashboard)
+- [1 General Information](#1-general-information)
+- [2 How to start?](#2-how-to-start?)
+- [3 Upload Data](#3-upload-data)
+- [4 Search Data](#4-search-data)
+- [5 Dashboard](#5-dashboard)
 
 
 <!-- /TOC -->
