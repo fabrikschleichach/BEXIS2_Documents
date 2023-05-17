@@ -244,6 +244,7 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=en) lice
 | @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
 
 | Licence	| Content			| Description   |
+|---------------|-------------------------------|---------------|
 | CC BY		| Attribution   		| This license lets others distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. |
 | CC BY-SA	| Attribution-ShareAlike 	| This license lets others remix, adapt, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. |
 | CC BY-ND	| Attribution-NoDerivs		| This license lets others reuse the work for any purpose, including commercially; however, it cannot be shared with others in adapted form, and credit must be provided to you. |
