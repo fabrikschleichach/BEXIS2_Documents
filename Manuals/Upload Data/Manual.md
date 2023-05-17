@@ -245,12 +245,13 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=en) lice
 
 | Licence	| Content			| Description   |
 |---------------|-------------------------------|---------------|
+| CC0		| No Rights Reserved		| This "license" allows licensors to waive all rights and place a work in the public domain. |
 | CC BY		| Attribution   		| This license lets others distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. |
 | CC BY-SA	| Attribution-ShareAlike 	| This license lets others remix, adapt, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. |
 | CC BY-ND	| Attribution-NoDerivs		| This license lets others reuse the work for any purpose, including commercially; however, it cannot be shared with others in adapted form, and credit must be provided to you. |
 | CC BY-NC	| Attribution-NonCommercial	| This license lets others remix, adapt, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms. |
 | CC BY-NC-SA  	| Attribution-NonCommercial-ShareAlike 	| This license lets others remix, adapt, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.  |
-| CC BY-NC-ND  	| Attribution-NonCommercial-NoDerivs  	| This license is the most restrictive of our six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. |
+| CC BY-NC-ND  	| Attribution-NonCommercial-NoDerivs  	| This license is the most restrictive of the six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. |
 
 
 ### 3.12 Descriptions
