@@ -243,6 +243,9 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=en) lice
 | Rights			| **!!! Leave this field empty !!!** | --- 	|
 | @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
 
+
+Here some information about the Creative Commons licenses taken from the ![Creative Commons](https://creativecommons.org/licenses/?lang=en) website. 
+
 | Licence	| Content			| Description   |
 |---------------|-------------------------------|---------------|
 | CC0		| No Rights Reserved		| This "license" allows licensors to waive all rights and place a work in the public domain. |
