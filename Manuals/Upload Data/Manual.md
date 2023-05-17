@@ -236,12 +236,21 @@ Some common formats:
 
 ### 3.11 Rights List
 
-Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=de) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
+Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=en) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | Rights			| **!!! Leave this field empty !!!** | --- 	|
 | @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
+
+| Licence	| Content			| Description   |
+| CC BY		| Attribution   		| This license lets others distribute, remix, adapt, and build upon your work, even commercially, as long as they credit you for the original creation. |
+| CC BY-SA	| Attribution-ShareAlike 	| This license lets others remix, adapt, and build upon your work even for commercial purposes, as long as they credit you and license their new creations under the identical terms. |
+| CC BY-ND	| Attribution-NoDerivs		| This license lets others reuse the work for any purpose, including commercially; however, it cannot be shared with others in adapted form, and credit must be provided to you. |
+| CC BY-NC	| Attribution-NonCommercial	| This license lets others remix, adapt, and build upon your work non-commercially, and although their new works must also acknowledge you and be non-commercial, they don’t have to license their derivative works on the same terms. |
+| CC BY-NC-SA  	| Attribution-NonCommercial-ShareAlike 	| This license lets others remix, adapt, and build upon your work non-commercially, as long as they credit you and license their new creations under the identical terms.  |
+| CC BY-NC-ND  	| Attribution-NonCommercial-NoDerivs  	| This license is the most restrictive of our six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. |
+
 
 ### 3.12 Descriptions
 
