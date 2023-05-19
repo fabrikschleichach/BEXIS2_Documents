@@ -281,7 +281,7 @@ There are 4 different options to provide geographic information:
 
 You can select one option or combine two or more options, e.g. provide a Place AND a Point. 
 
-If your data covers all or a whole range of BETA-FOR patches, you can either provide some general information here (e.g. GeoLocationPlace = Germany) or skip this field and ![refer to the geographic information dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Manual.md#39-related-identifiers).
+If your data covers all or a whole range of BETA-FOR patches, you can either enter some general information (e.g. GeoLocationPlace = Germany) or skip this field and ![refer to the geographic information dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Manual.md#39-related-identifiers).
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
