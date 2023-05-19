@@ -18,8 +18,9 @@
 	- [3.10 Formats](#310-formats)
 	- [3.11 Rights List](#311-rights-list)
 	- [3.12 Descriptions](#312-descriptions)
-	- [3.13 Funding References](#313-funding-references)
-	- [3.14 Related Items](#314-related-items)
+	- [3.13 GeoLocations](#313-geolocations)
+	- [3.14 Funding References](#314-funding-references)
+	- [3.15 Related Items](#315-related-items)
 - [4 Upload data](#4-upload-data)
 	- [4.1 Upload File](#41-upload-file)
 	- [4.2 Push Big File](#42-push-big-file)
@@ -266,7 +267,39 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 | Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
 | @Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
 
-### 3.13 Funding References 
+
+### 3.13 GeoLocations
+
+The field *GeoLocation* is repeatable. Provide a spatial region or named place where the data was gathered or about which the data is focused.
+
+There are 4 different options to provide geographic information:
+
+* Geo Location **Place**: A name of a location.
+* Geo Location **Point**: A single longitude-latitude pair.
+* Geo Location **Box**: A box, defined by two geographic points: left low corner (WestSouth) and right upper corner (EastNorth).
+* Geo Location **Polygon**: A polygon, delimited by geographic points. The last point should be the same as the first point. 
+
+You can select one option or combine two or more options, e.g. provide a Place AND a Point. 
+
+If your data covers all or quite a lot BETA-FOR patches, you can either provide some general information here (e.g. Germany) or skip this field and olny refer to the geographic dataset.
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| GeoLocationPlace		| Enter a location. Best practice is to use a term from a controlled vocabulary like ![GeoNames](https://www.geonames.org/). | Bavarian Forest |
+| Geo Location Point / Point longitude | Enter the longitude in decimal degrees (-180 <= longitude <= 180). | 10.45047 |
+| Geo Location Point / Point latitude | Enter the latitude in decimal degrees (-90 <= latitude <= 90). | 50.05453 |
+| Geo Location Box / West bound longitude | Enter the longitude of the left low corner of the box. | 		|
+| Geo Location Box / East bound longitude | Enter the longitude of the right upper corner of the box. |		|
+| Geo Location Box / South bound latitude | Enter the latitude of the left low corner of the box. |		|
+| Geo Location Box / North bound latitude | Enter the latitude of the right upper corner of the box. |		|
+| Geo Location Polygon / Polygon Point / Point longitude | Enter the longitude of a polygon point. Make sure that the last point is the same as the first point. |		|
+| Geo Location Polygon / Polygon Point / Point latitude | Enter the latitude of a polygon point. Make sure that the last point is the same as the first point. |		|
+| Geo Location Polygon / In Polygon Point / Point longitude | For any bound area that is larger than half the earth, define a (random) point inside. |		|
+| Geo Location Polygon / In Polygon Point / Point latitude | For any bound area that is larger than half the earth, define a (random) point inside. |		|
+
+
+
+### 3.14 Funding References 
 
 **!!! Due to software issues, please select the "@Funder identifier type" (= ROR) first !!!**
 
@@ -279,7 +312,7 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 | Award URI			| Will be set automatically. The URI of the grant. | https://gepris.dfg.de/gepris/projekt/459717468 |
 | Award title 			| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR: Enhancing the structural diversity between patches for improving multidiversity and multifunctionality in production forests. | 
 
-### 3.14 Related Items
+### 3.15 Related Items
 
 If your data has been published in a journal, you can share this information by entering the following fields:
 
