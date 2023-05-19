@@ -101,7 +101,7 @@ You can edit a submitted dataset or make a copy of that by clicking the _Edit_ o
 
 If an input is wrong or missing, the corresponding field is highlighted in red. 
 
-There are a few **Mandatory fields**, that must be filled out. The others are strongly recommended.
+There are a few **Mandatory fields**, that must be filled out. The others are strongly recommended. Provide at least as much information as you would need to be able to classify the data without further contextual information.
 
 ### 3.2 Basic
 
@@ -281,7 +281,7 @@ There are 4 different options to provide geographic information:
 
 You can select one option or combine two or more options, e.g. provide a Place AND a Point. 
 
-If your data covers all or a whole range of BETA-FOR patches, you can either provide some general information here (e.g. Germany) or skip this field and only ![refer to the geographic dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Manual.md#39-related-identifiers).
+If your data covers all or a whole range of BETA-FOR patches, you can either provide some general information here (e.g. GeoLocationPlace = Germany) or skip this field and only ![refer to the geographic dataset](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Upload%20Data/Manual.md#39-related-identifiers).
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
