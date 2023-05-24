@@ -16,7 +16,8 @@ The registration form is accessible via the _Register_ button on the upper right
 
 All fields of the form are mandatory.
 
-The username should have a uniform format: first letter of your given name (lowercase) followed by your last name (first letter of your last name in uppercase), e.g. “sKuemmet”.
+The username should have a **uniform format**: first letter of your given name (lowercase) followed by your last name (first letter of your last name in uppercase), e.g. “sKuemmet”.
+Do not use neither your local username nor password!!! 
 
 Don`t forget to select the checkbox “I accept Terms and Conditions” (= Publication Policy) and click on the button _Register_. 
 
