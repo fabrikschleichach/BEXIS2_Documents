@@ -138,6 +138,7 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 The title field is repeatable. 
 
 To make sure that same things have same naming, pick the Method/Device name from ![here](https://docs.google.com/document/d/1DKHSOQrK5LqxLlfZqJu-fhkgmu5ahpPzNj9slEb2f24/edit?usp=sharing). The bold one is the preferred name. 
+If your Method/Device is missing, add it to the list to make sure that others will reuse the term you picked. 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
