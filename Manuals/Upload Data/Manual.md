@@ -101,7 +101,7 @@ You can edit a submitted dataset or make a copy of that by clicking the _Edit_ o
 
 If an input is wrong or missing, the corresponding field is highlighted in red. 
 
-There are a few **Mandatory fields**, that must be filled out. The others are strongly recommended. Provide at least as much information as you would need to be able to classify the data without further contextual information.
+There are a few 🔴**Mandatory fields**, that must be filled out. The others are 🟣strongly recommended. Provide at least as much information as you would need to be able to classify the data without further contextual information.
 
 ### 3.2 Basic
 
@@ -109,11 +109,11 @@ There are a few **Mandatory fields**, that must be filled out. The others are st
 |-------------------------------|-------------------------------|---------------|
 | Identifier			| Will be set automatically.	| 1		|
 | @Identifier type		| Will be set by the data manager.	| DOI	|
-| **Publisher**			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
-| Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
-| **Resource Type** 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
-| @Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
-| Language			| The Language of the (primary) data. | en 	|
+| 🔴**Publisher**			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
+| 🟣Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
+| 🔴**Resource Type** 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
+| 🟣@Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
+| 🟣Language			| The Language of the (primary) data. | en 	|
 | Version 			| Will be set automatically. 	| 2		|
 
 ### 3.3 Creators
@@ -126,7 +126,7 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| **Creator name**		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
+| 🔴**Creator name**		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
 | Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
@@ -142,7 +142,7 @@ If your Method/Device is missing, add it to the list to make sure that others wi
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| **Title** 			| Format: **Project_Subproject_Organism/Function_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2021/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
+| 🔴**Title** 			| Format: **Project_Subproject_Organism/Function_Method/Device_Year**; For depicting time ranges, use the following syntax: YYYY/YYYY, e.g. 2021/2023. | BETA-FOR_SP9_Bat_BatRecorder_2022, BETA-FOR_SPZ_Temperature_Tomst_2022/2023 |
 | @Title type			| Leave the field empty if there is only one (main) title. | |
 
 
@@ -152,7 +152,7 @@ The subject field is repeatable.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Subject			| You can provide the **scientific name of an organism** here. Ideally, the name supplied is at species level or below. If the determination only allows for information on a higher level, this is acceptable as well. Valid scientific names are Latin names following the syntax rules of the respective taxon group (e.g. botanical nomenclature). | Parus major |
+| 🟣Subject			| You can provide the **scientific name of an organism** here. Ideally, the name supplied is at species level or below. If the determination only allows for information on a higher level, this is acceptable as well. Valid scientific names are Latin names following the syntax rules of the respective taxon group (e.g. botanical nomenclature). | Parus major |
 
 ### 3.6 Contributors
 
@@ -163,7 +163,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 
 | Element / @Attribute Name       | How to fill it		    | Example 	    |
 |-------------------------------|-------------------------------|---------------|
-| Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
+| 🟣Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
 | Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
@@ -175,7 +175,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | Date				| Will be set automatically. Date, when the dataset was created. | 2023-06-12 |
-| @Date type			| Select **Created**            | Created	|
+| 🟣@Date type			| Select **Created**            | Created	|
 
 
 ### 3.8 Alternate Identifiers
@@ -184,8 +184,8 @@ The element *Alternate Identifiers* should be used in cases of large raw data, t
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Alternate identifier		| Enter the storage location of the (large raw) data here. | |
-| @Alternate Identifier		| Fill in **External storage location**.	| External storage location |
+| 🟣Alternate identifier		| Enter the storage location of the (large raw) data here. | |
+| 🟣@Alternate Identifier		| Fill in **External storage location**.	| External storage location |
 
 ### 3.9 Related Identifiers
 
@@ -197,15 +197,15 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Patches_2022/2023 |
-| @Related identifier type 	| Default is **URL**. 		| URL		|
-| @Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | IsSupplementedBy |
+| 🟣Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Patches_2022/2023 |
+| 🟣@Related identifier type 	| Default is **URL**. 		| URL		|
+| 🟣@Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | IsSupplementedBy |
 
 ### 3.10 Formats
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Format			| Use ![iana media types](https://www.iana.org/assignments/media-types/media-types.xhtml) for specifying the technical format of the (primary) data. | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
+| 🟣Format			| Use ![iana media types](https://www.iana.org/assignments/media-types/media-types.xhtml) for specifying the technical format of the (primary) data. | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
 
 Some common formats: 
 
@@ -244,7 +244,7 @@ Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=en) lice
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | Rights			| **!!! Leave this field empty !!!** | --- 	|
-| @Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
+| 🟣@Rights identifier		| Select a Licence. Default is **CC BY-NC-SA**. | CC BY-NC-SA |
 
 
 Here some information about the different Creative Commons licenses taken from the ![Creative Commons](https://creativecommons.org/licenses/?lang=en) website. 
@@ -266,8 +266,8 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
-| @Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
+| 🟣Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
+| 🟣@Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
 
 
 ### 3.13 GeoLocations
@@ -287,9 +287,9 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| GeoLocationPlace		| Enter a location. Best practice is to use a term from a controlled vocabulary like ![GeoNames](https://www.geonames.org/). | Bavarian Forest |
-| Geo Location Point / Point longitude | Enter the longitude in decimal degrees (-180 <= longitude <= 180). | 10.45047 |
-| Geo Location Point / Point latitude | Enter the latitude in decimal degrees (-90 <= latitude <= 90). | 50.05453 |
+| 🟣GeoLocationPlace		| Enter a location. Best practice is to use a term from a controlled vocabulary like ![GeoNames](https://www.geonames.org/). | Bavarian Forest |
+| 🟣Geo Location Point / Point longitude | Enter the longitude in decimal degrees (-180 <= longitude <= 180). | 10.45047 |
+| 🟣Geo Location Point / Point latitude | Enter the latitude in decimal degrees (-90 <= latitude <= 90). | 50.05453 |
 | Geo Location Box / West bound longitude | Enter the longitude of the left low corner of the box. | 		|
 | Geo Location Box / East bound longitude | Enter the longitude of the right upper corner of the box. |		|
 | Geo Location Box / South bound latitude | Enter the latitude of the left low corner of the box. |		|
@@ -312,7 +312,7 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 | @Funder identifier type 	| Select **ROR**. A scheme for identifying organizations. | ROR |
 | Award number			| Will be set automatically. The number of the grant. | 459717468 |
 | Award URI			| Will be set automatically. The URI of the grant. | https://gepris.dfg.de/gepris/projekt/459717468 |
-| Award title 			| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR: Enhancing the structural diversity between patches for improving multidiversity and multifunctionality in production forests. | 
+| 🟣Award title 			| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR: Enhancing the structural diversity between patches for improving multidiversity and multifunctionality in production forests. | 
 
 ### 3.15 Related Items
 
