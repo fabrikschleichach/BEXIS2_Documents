@@ -45,7 +45,7 @@ library(rBExIS)
 
 ## 4 Preparation
 
-Before you can start working with rBExIS, you have to configure it by adding some values / options. 
+Before you can start working with rBExIS, you have to make some configurations by adding some values / options. 
 
 To get an overview of the current configuration, use the following command:
 
