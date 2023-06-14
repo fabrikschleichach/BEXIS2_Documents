@@ -7,12 +7,12 @@
 - [3 Install](#3-install)
 - [4 Preparation](#4-preparation)
 - [5 Functions](#5-functions)
-   - [5.1 List of Dataset Ids](#5.1-list-of-dataset-ids)
-   - [5.2 Primary Data of a specific Dataset](#5.2-primary-data-of-a-specific-dataset)
-   - [5.3 List of Metadata Objects](#5.3-list-of-metadata-objects)
-   - [5.4 Metadata of a specific Dataset](#5.4-metadata-of-a-specific-dataset)
-   - [5.5 List of Data Structures](#5.5-list-of-data-structures)
-   - [5.6 Data Structure of a specific Dataset](#5.6-data-structure-of-a-specific-dataset)
+	- [5.1 List of Dataset Ids](#51-list-of-dataset-ids)
+   - [5.2 Primary Data of a specific Dataset](#52-primary-data-of-a-specific-dataset)
+   - [5.3 List of Metadata Objects](#53-list-of-metadata-objects)
+   - [5.4 Metadata of a specific Dataset](#54-metadata-of-a-specific-dataset)
+   - [5.5 List of Data Structures](#55-list-of-data-structures)
+   - [5.6 Data Structure of a specific Dataset](#56-data-structure-of-a-specific-dataset)
 
 
 <!-- /TOC -->
@@ -59,7 +59,7 @@ You have to set at least the *base_url*, which is the domain/url of the BEXIS2 i
 bexis.options("base_url" = "https://www.betafor.biozentrum.uni-wuerzburg.de/")
 ```
 
-For authentication / authorization you can either set your **username and password** or use your **token**:
+For authentication / authorization you can set your **username and password** and / or use your **token**:
 
 ```
 bexis.options("authorization_basic" = "username:password")
@@ -116,7 +116,7 @@ bexis_structures <- rBExIS::bexis.GetDataStructures()
 
 ### 5.6 Data Structure of a specific Dataset
 
-To get the data structure of a specific dataset, use the following function. As parameter _id_, use the id of the **dataset structure** you want to get.
+To get the data structure of a specific dataset, use the following function. As parameter _id_, use the id of the **data structure** you want to get.
 
 ```
 bexis_structure <- rBExIS::bexis.GetDataStructureById(id)
