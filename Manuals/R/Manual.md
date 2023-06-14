@@ -7,6 +7,12 @@
 - [3 Install](#3-install)
 - [4 Preparation](#4-preparation)
 - [5 Functions](#5-functions)
+   - [5.1 List of Dataset Ids](#5.1-list-of-dataset-ids)
+   - [5.2 Primary Data of a specific Dataset](#5.2-primary-data-of-a-specific-dataset)
+   - [5.3 List of Metadata Objects](#5.3-list-of-metadata-objects)
+   - [5.4 Metadata of a specific Dataset](#5.4-metadata-of-a-specific-dataset)
+   - [5.5 List of Data Structures](#5.5-list-of-data-structures)
+   - [5.6 Data Structure of a specific Dataset](#5.6-data-structure-of-a-specific-dataset)
 
 
 <!-- /TOC -->
@@ -53,8 +59,68 @@ You have to set at least the *base_url*, which is the domain/url of the BEXIS2 i
 bexis.options("base_url" = "https://www.betafor.biozentrum.uni-wuerzburg.de/")
 ```
 
+For authentication / authorization you can either set your **username and password** or use your **token**:
+
+```
+bexis.options("authorization_basic" = "username:password")
+
+bexis.options("authorization_bearer" = "KJkSKJxEoiXwk9ipAvKkNEJ9isGGi64drtQDRf9KKCDRKSE5JYvz5j8Yx5Unvto5")
+
+```
+
+You can find your token by clicking on your account and selecting _Token_:
 
 
+
+## 5 Functions
+
+### 5.1 List of Dataset Ids
+
+To get a list of all dataset ids in our BEXIS2 instance, type:
+
+```
+bexis_dataset_ids <- rBExIS::bexis.GetDatasetIds()
+```
+
+### 5.2 (Primary) Data of a specific Dataset
+
+To get the (primary) data of a specific dataset, use the following function. As parameter _id_, use the id of the dataset you want to get the data from. 
+
+```
+bexis_data <- rBExIS::bexis.GetDatasetById(id)
+```
+
+### 5.3 List of Metadata Objects
+
+To get a list of all metadata objects, type: 
+
+```
+bexis_metadata_list <- rBExIS::bexis.GetMetadata()
+```
+
+### 5.4 Metadata of a specific Dataset
+
+To get the metadata of a specific dataset, use the following function. As parameter _id_, use the id of the dataset you want to get the metadata from. 
+
+```
+bexis_metadata <- rBExIS::bexis.GetMetadataById(id)
+```
+
+### 5.5 List of Data Structures
+
+To get a list of all data structures in our BEXIS2 instance, type:
+
+```
+bexis_structures <- rBExIS::bexis.GetDataStructures()
+```
+
+### 5.6 Data Structure of a specific Dataset
+
+To get the data structure of a specific dataset, use the following function. As parameter _id_, use the id of the **dataset structure** you want to get.
+
+```
+bexis_structure <- rBExIS::bexis.GetDataStructureById(id)
+```
 
 ![Go to top](#1-general-information)
    
