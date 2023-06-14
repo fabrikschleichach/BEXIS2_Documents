@@ -70,7 +70,7 @@ bexis.options("authorization_bearer" = "KJkSKJxEoiXwk9ipAvKkNEJ9isGGi64drtQDRf9K
 
 You can find your token by clicking on your account and selecting _Token_:
 
-
+https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/Token.PNG
 
 ## 5 Functions
 
