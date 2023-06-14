@@ -70,7 +70,9 @@ bexis.options("authorization_bearer" = "KJkSKJxEoiXwk9ipAvKkNEJ9isGGi64drtQDRf9K
 
 You can find your token by clicking on your account and selecting _Token_:
 
-https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/Token.PNG
+![Token](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/Token.PNG)
+
+
 
 ## 5 Functions
 
@@ -82,6 +84,8 @@ To get a list of all dataset ids in our BEXIS2 instance, type:
 bexis_dataset_ids <- rBExIS::bexis.GetDatasetIds()
 ```
 
+![bexis_dataset_ids](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/bexis_dataset_ids.PNG)
+
 ### 5.2 (Primary) Data of a specific Dataset
 
 To get the (primary) data of a specific dataset, use the following function. As parameter _id_, use the id of the dataset you want to get the data from. 
@@ -89,6 +93,8 @@ To get the (primary) data of a specific dataset, use the following function. As 
 ```
 bexis_data <- rBExIS::bexis.GetDatasetById(id)
 ```
+
+![bexis_data](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/bexis_data.PNG)
 
 ### 5.3 List of Metadata Objects
 
@@ -98,6 +104,8 @@ To get a list of all metadata objects, type:
 bexis_metadata_list <- rBExIS::bexis.GetMetadata()
 ```
 
+![bexis_metadata_list](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/bexis_metadata_list.PNG)
+
 ### 5.4 Metadata of a specific Dataset
 
 To get the metadata of a specific dataset, use the following function. As parameter _id_, use the id of the dataset you want to get the metadata from. 
@@ -105,6 +113,8 @@ To get the metadata of a specific dataset, use the following function. As parame
 ```
 bexis_metadata <- rBExIS::bexis.GetMetadataById(id)
 ```
+
+![bexis_metadata](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/bexis_metadata.PNG)
 
 ### 5.5 List of Data Structures
 
@@ -114,6 +124,8 @@ To get a list of all data structures in our BEXIS2 instance, type:
 bexis_structures <- rBExIS::bexis.GetDataStructures()
 ```
 
+![bexis_structures](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/bexis_structures.PNG)
+
 ### 5.6 Data Structure of a specific Dataset
 
 To get the data structure of a specific dataset, use the following function. As parameter _id_, use the id of the **data structure** you want to get.
@@ -121,6 +133,8 @@ To get the data structure of a specific dataset, use the following function. As 
 ```
 bexis_structure <- rBExIS::bexis.GetDataStructureById(id)
 ```
+
+![bexis_structure](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/R/Images/bexis_structure.PNG)
 
 ![Go to top](#1-general-information)
    
