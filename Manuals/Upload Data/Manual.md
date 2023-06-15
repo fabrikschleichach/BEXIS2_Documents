@@ -309,7 +309,7 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 |-------------------------------|-------------------------------|---------------|
 | Funder name 			| Will be set automatically. The name of the project funder. | Deutsche Forschungsgemeinschaft (DFG) |			
 | Funder identifier		| Will be set automatically. An unique identifier for the funder. | https://ror.org/018mejw64 |
-| @Funder identifier type 	| Select **ROR**. A scheme for identifying organizations. | ROR |
+| 🟣@Funder identifier type 	| Select **ROR**. A scheme for identifying organizations. | ROR |
 | Award number			| Will be set automatically. The number of the grant. | 459717468 |
 | Award URI			| Will be set automatically. The URI of the grant. | https://gepris.dfg.de/gepris/projekt/459717468 |
 | 🟣Award title 			| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR: Enhancing the structural diversity between patches for improving multidiversity and multifunctionality in production forests. | 
