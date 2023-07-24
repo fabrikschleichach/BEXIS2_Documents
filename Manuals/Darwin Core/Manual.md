@@ -10,7 +10,7 @@
 
 ## 1 General Information
 
-**Darwin Core** is a standard for describing biodiversity data. It has a focus on taxa and their occurences in nature. If your data shares this focus, it would be great if you could map your data to Darwin Core terms. 
+**Darwin Core** is a standard for describing biodiversity data. It has a focus on taxa and their occurences in nature. If your data shares this focus, it would be great if you could map your data to Darwin Core terms. Don`t worry, I will show you, how to do this step by step.
 
 ![Classes](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Darwin%20Core/Images/Classes.png)
 
