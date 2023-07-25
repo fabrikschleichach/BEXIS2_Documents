@@ -180,12 +180,22 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 
 ### 3.8 Alternate Identifiers
 
-The element *Alternate Identifiers* should be used in cases of large raw data, that cannot be stored directly in BEXIS2. 
+There are two different use cases for the element *Alternate Identifiers*:
+
+1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS (**NAS**, in cases of large raw data; **Archivserver**).
+   
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| 🟣Alternate identifier		| Enter the storage location of the (primary) data here. | |
+| 🟣@Alternate Identifier Type	| Fill in **External storage location**.	| External storage location |
+
+2) Use the element *Alternate Identifiers* if your dataset has a **DOI**.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Alternate identifier		| Enter the storage location of the (large raw) data here. | |
-| 🟣@Alternate Identifier		| Fill in **External storage location**.	| External storage location |
+| 🟣Alternate identifier		| Enter the DOI here. | |
+| 🟣@Alternate Identifier Type	| Fill in **DOI**.	| DOI |
+   
 
 ### 3.9 Related Identifiers
 
