@@ -126,7 +126,7 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🔴**Creator name**		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
+| 🔴**Creator name**		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. (Note: Only persons with a BEXIS account can be selected via autocomplete).  | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
 | Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
@@ -163,7 +163,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 
 | Element / @Attribute Name       | How to fill it		    | Example 	    |
 |-------------------------------|-------------------------------|---------------|
-| 🟣Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. | Kümmet, Sonja |
+| 🟣Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. (Note: Only persons with a BEXIS account can be selected via autocomplete). | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
 | Family name			| Will be set automatically.	| Kümmet	|
 | Name identifier		| Will be set automatically. An unique identifier for the person. Default is an ORCID ID. | 0000-0002-8954-0200 |
