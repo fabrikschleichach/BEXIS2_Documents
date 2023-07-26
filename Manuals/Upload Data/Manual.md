@@ -221,7 +221,7 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Format			| The file extension of your (primary) data. Select an entry from the drop-down menu. | XLSX |
+| 🟣Format			| The file extension of your (primary) data. Select an entry from the drop-down list. | XLSX |
 
 
 ### 3.11 Rights List
