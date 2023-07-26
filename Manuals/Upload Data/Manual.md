@@ -173,7 +173,9 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 ### 3.7 Dates 
 
 Important dates related to the (primary) data.
+
 **Collected**: When was the (primary) data collected in the field?
+
 **Created**: When was the (tabular) data created? 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
