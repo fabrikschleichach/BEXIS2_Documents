@@ -174,8 +174,8 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Date				| Will be set automatically. Date, when the dataset was created. | 2023-06-12 |
-| 🟣@Date type			| Select **Created**            | Created	|
+| Date				| Date or duration, when the data was collected.| 2023-06-12 |
+| 🟣@Date type			| Select **Collected**          | Collected 	|
 
 
 ### 3.8 Alternate Identifiers
