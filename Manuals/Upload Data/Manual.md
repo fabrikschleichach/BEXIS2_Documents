@@ -161,7 +161,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 
 **!!! Due to software issues, please fill the field "@Name identifier scheme" (= ORCID) first !!!**
 
-| Element / @Attribute Name       | How to fill it		    | Example 	    |
+| Element / @Attribute Name     | How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | 🟣Contributor name		| Use an entry from autocomplete list. Fill in the first letter of the last name of the creator. (Note: Only persons with a BEXIS account can be selected via autocomplete). | Kümmet, Sonja |
 | Given name			| Will be set automatically. 	| Sonja 	|
@@ -172,17 +172,21 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 
 ### 3.7 Dates 
 
+Important dates related to the (primary) data.
+**Collected**: When was the (primary) data collected in the field?
+**Created**: When was the (tabular) data created? 
+
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Date				| Date or time period, when the data was collected.| 2023-06-12 |
-| 🟣@Date type			| Select **Collected**          | Collected 	|
+| Date				| Date or date range. Use one of the following formats: YYYY, YYYY-MM-DD, YYYY-MM-DDThh:mm:ssTZD. Date ranges should be formatted like this: 2023-07-01/2023-07-31.  | 2023-06-12 |
+| 🟣@Date type			| Select a date type from the drop-down list.   | Collected 	|
 
 
 ### 3.8 Alternate Identifiers
 
 There are two different use cases for the element *Alternate Identifiers*:
 
-1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS (**NAS**, in cases of large raw data; **Archivserver**).
+1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS (**NAS**, in case of large raw data; **Archivserver**).
    
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
