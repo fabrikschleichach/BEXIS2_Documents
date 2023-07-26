@@ -178,7 +178,7 @@ Important dates related to the (primary) data.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| Date				| Date or date range. Use one of the following formats: YYYY, YYYY-MM-DD, YYYY-MM-DDThh:mm:ssTZD. Date ranges should be formatted like this: 2023-07-01/2023-07-31.  | 2023-06-12 |
+| 🟣Date				| Date or date range. Use one of the following formats: YYYY, YYYY-MM-DD, YYYY-MM-DDThh:mm:ssTZD. Date ranges should be formatted like this: 2023-07-01/2023-07-31.  | 2023-06-12 |
 | 🟣@Date type			| Select a date type from the drop-down list.   | Collected 	|
 
 
