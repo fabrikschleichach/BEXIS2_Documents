@@ -193,7 +193,7 @@ There are two different use cases for the element *Alternate Identifiers*:
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Alternate identifier		| Enter the DOI here. | |
+| 🟣Alternate identifier	| Enter the DOI here. 		| 10.58160/88 	|
 | 🟣@Alternate Identifier Type	| Fill in **DOI**.	| DOI |
    
 
