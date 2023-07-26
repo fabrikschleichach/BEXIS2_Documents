@@ -109,7 +109,7 @@ There are a few 🔴**Mandatory fields**, that must be filled out. The others ar
 |-------------------------------|-------------------------------|---------------|
 | Identifier			| Will be set automatically.	| 1		|
 | @Identifier type		| Will be set by the data manager.	| DOI	|
-| 🔴**Publisher**			| Use an entry from autocomplete list. Fill in the first letter of the publisher. Default is **University of Würzburg**.				| University of Würzburg |
+| 🔴**Publisher**		| Default is **University of Würzburg**.				| University of Würzburg |
 | 🟣Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
 | 🔴**Resource Type** 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
 | 🟣@Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
@@ -152,7 +152,7 @@ The subject field is repeatable.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Subject			| You can provide the **scientific name of an organism** here. Ideally, the name supplied is at species level or below. If the determination only allows for information on a higher level, this is acceptable as well. Valid scientific names are Latin names following the syntax rules of the respective taxon group (e.g. botanical nomenclature). | Parus major |
+| 🟣Subject			| Select one or more Taxonomic Term(s).| Animals / Vertebrates  |
 
 ### 3.6 Contributors
 
@@ -215,36 +215,7 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Format			| Use ![iana media types](https://www.iana.org/assignments/media-types/media-types.xhtml) for specifying the technical format of the (primary) data. | application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
-
-Some common formats: 
-
-| File extension| iana media type |
-|---------------|-----------------|
-| .bin		| application/octet-stream |
-| .csv		| text/csv |
-| .doc		| application/msword |
-| .docx 	| application/vnd.openxmlformats-officedocument.wordprocessingml.document |
-| .jpeg, .jpg	| image/jpg |
-| .gif		| image/gif |
-| .html		| text/html |
-| .mp3		| audio/mpeg |
-| .mp4        	| video/mp4 |
-| .ods		| application/vnd.oasis.opendocument.spreadsheet |
-| .odt		| application/vnd.oasis.opendocument.text |
-| .pdf		| application/pdf |
-| .png		| image/png |
-| .ppt		| application/vnd.ms-powerpoint |
-| .pptx		| application/vnd.openxmlformats-officedocument.presentationml.presentation |
-| .svg		| image/svg+xml |
-| .tar		| application/x-tar |
-| .tif, .tiff 	| image/tiff |
-| .txt		| text/plain |
-| .wav		| audio/wav |
-| .xls		| application/vnd.ms-excel |
-| .xlsx		| application/vnd.openxmlformats-officedocument.spreadsheetml.sheet |
-| .zip		| application/zip |
-| .7z		| application/x-7z-compressed |
+| 🟣Format			| The file extension of your (primary) data. Select an entry from the drop-down menu. | XLSX |
 
 
 ### 3.11 Rights List
