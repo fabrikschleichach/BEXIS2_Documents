@@ -64,7 +64,7 @@ BEXIS2 will now refer you to the tool with which you can create your data struct
 ![Edit Data Structure new](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Edit_Data_Structure_new.PNG)
 
 
-Choose - if possible - a variable template starting with an uppercase letter. These have been especially defined for BETA-FOR. If there`s no variable template that fits to your data, email your metadata manager (betafor@uni-wuerzburg.de) or [create a new one](#33-create-a-variable-template) on your own.
+If there`s no variable template that fits to your data, email your data manager (betafor@uni-wuerzburg.de) or [create a new one](#33-create-a-variable-template) on your own.
 
 When you click the arrow button next to a variable template, the variable will be displayed on the right side. You can keep its name or make it more specific.
 
@@ -84,10 +84,10 @@ You can also define a placeholder for missing values. Their might be one by defa
 
 Every BETA-FOR Dataset should contain these two Variables:
 
-| Variable Name		| Possible Values	| Why mandatory?	| Example	|
-|----------------------	|-----------------------|----------------------|---------------|
-|**PatchLabel_BETAFOR**	| 			| Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9). | U03EAB003 |
-|**Treatment_present**	| true, false		| Indicates if the BETA-FOR treatment was already present when the data was collected. | true |
+| Variable Name		| Variable Template	| Possible Values	| Why mandatory?	| Example	|
+|----------------------	|-----------------------|-----------------------|-----------------------|---------------|
+|**PatchLabelBETAFOR**	| LocationID		| Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9). | U03EAB003 |
+|**TreatmentPresent**	| TreatmentPresent	| true, false		| Indicates if the BETA-FOR treatment (which is part of the PatchLabelBETAFOR) was already present when the data was collected. | true |
 
 Make sure that your dataset contains some date and time information (in ISO 8601 standard). 
 
