@@ -121,7 +121,7 @@ There are a few 🔴**Mandatory fields**, that must be filled out. The others ar
 Creators are the main researchers involved working on the data in priority order. All creators are owners of the dataset and have **write permission**. 
 The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as appropriate.
 
-**!!! Due to software issues, please fill the field "@Name identifier scheme" (= ORCID) first !!!**
+**!!! Due to software issues, please enter the field "@Name identifier scheme" (= ORCID) first !!!**
 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
@@ -159,7 +159,7 @@ The subject field is repeatable.
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
 The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manager, TAs, Studentische Hilfskräfte, Praktiker, ...) as appropriate.
 
-**!!! Due to software issues, please fill the field "@Name identifier scheme" (= ORCID) first !!!**
+**!!! Due to software issues, please enter the field "@Name identifier scheme" (= ORCID) first !!!**
 
 | Element / @Attribute Name     | How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
