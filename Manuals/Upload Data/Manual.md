@@ -152,7 +152,7 @@ The subject field is repeatable.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Subject			| Select one or more Taxonomic Term(s).| Animals / Vertebrates  |
+| 🟣Subject			| Select one or more Taxonomic Term(s).| Aves	|
 
 ### 3.6 Contributors
 
