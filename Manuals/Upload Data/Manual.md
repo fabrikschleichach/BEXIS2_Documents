@@ -188,7 +188,9 @@ Important dates related to the (primary) data.
 
 There are two different use cases for the element *Alternate Identifiers*:
 
-1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS (**NAS**, in case of large raw data; **Archivserver**).
+1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS:
+*  **External storage location**, in case of large raw data 
+*  **Archive** (Archive server of University of Würzburg)
    
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
