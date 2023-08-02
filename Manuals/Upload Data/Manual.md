@@ -280,7 +280,7 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 
 ### 3.14 Funding References 
 
-The field *Funding Reference* is repeatable. **Please enter both the project (BETA-FOR) and the subproject (e.g. SP9).** 
+The field *Funding Reference* is repeatable. Please enter both the **project** (BETA-FOR) **and** the **subproject** (e.g. SP9). 
 
 **!!! Due to software issues, please select the "@Funder identifier type" (= ROR) first !!!**
 
