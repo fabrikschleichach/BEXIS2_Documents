@@ -86,7 +86,7 @@ Every BETA-FOR Dataset should contain these two Variables:
 
 | Variable Name		| Variable Template	| Possible Values	| Why mandatory?	| Example	|
 |----------------------	|-----------------------|-----------------------|-----------------------|---------------|
-|**patchLabelBETAFOR**	| locationID		| All BETA-FOR patch IDs | Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9). | U03EAB003 |
+|**patchLabelBETAFOR**	| locationID		| All BETA-FOR patch IDs | Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 14). | U03EAB003 |
 |**treatmentPresent**	| treatmentPresent	| true, false		| Indicates if the BETA-FOR treatment (which is part of the PatchLabelBETAFOR) was already present when the data was collected. | true |
 
 ### 2.2 Edit a Data Structure
