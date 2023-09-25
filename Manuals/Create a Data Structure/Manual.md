@@ -189,7 +189,7 @@ Otherwise ...
 * No hyphen / dash
 * No special characters
 * Avoid abbreviations
-* If your Variable Template name consists of more than one word, combine it with CamelCase, e.g. Species detected -> "SpeciesDetected".
+* If your Variable Template name consists of more than one word, combine it with CamelCase, e.g. scientific name -> "scientificName".
 
 **Short Name**
 
