@@ -41,7 +41,7 @@ If you want to upload tabular data to the system, there must be a corresponding 
 
 ## 2 Data Structure
 
-Data Structures contain Variables, which are specific instances of [Variable Templates](#3-variable-templates). A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. For every column of your tabular data you have to define a variable. 
+Data Structures contain Variables, which are specific instances of [Variable Templates](#3-variable-templates). A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: locationID, *variable*: patchLabelBETAFOR. For every column of your tabular data you have to define a variable. 
 
 ![Variables_VariableTemplates](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Variables_VariableTemplates.PNG)
 
@@ -76,7 +76,7 @@ A variable can be deleted from a structure by clicking on the trash button.
 
 If the *Optional* checkbox is selected, the variable/column of your tabular data can have empty entries.
 
-You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.
+You can also define a placeholder for missing values, e.g. 'NA'. Their might be one by default, but you can adjust it and add more.
 
 ![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
 
