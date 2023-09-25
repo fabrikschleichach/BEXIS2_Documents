@@ -123,7 +123,7 @@ Save the Excel Template to your preferred location on your computer.
 ### 2.5 Work with an Excel template
 An Excel template is an Excel file that includes the Data Structure information. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
 
-Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, choose the option "Enable content". 
+Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, click on "Weitere Informationen" and follow the instructions. 
 
 ![Makros aktivieren](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Makros_aktivieren.PNG)
 
