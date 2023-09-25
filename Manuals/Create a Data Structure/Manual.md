@@ -89,8 +89,6 @@ Every BETA-FOR Dataset should contain these two Variables:
 |**patchLabelBETAFOR**	| locationID		| All BETA-FOR patch IDs | Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9). | U03EAB003 |
 |**treatmentPresent**	| treatmentPresent	| true, false		| Indicates if the BETA-FOR treatment (which is part of the PatchLabelBETAFOR) was already present when the data was collected. | true |
 
-Make sure that your dataset contains some date and time information (in ISO 8601 standard). 
-
 ### 2.2 Edit a Data Structure
 
 You can edit an existing Data Structure by clicking on the edit button.
