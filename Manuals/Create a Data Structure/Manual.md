@@ -41,7 +41,7 @@ If you want to upload tabular data to the system, there must be a corresponding 
 
 ## 2 Data Structure
 
-Data Structures contain Variables, which are specific instances of [Variable Templates](#3-variable-templates). A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: species_detected, *variable*: Parus_major. For every column of your tabular data you have to define a variable. 
+Data Structures contain Variables, which are specific instances of [Variable Templates](#3-variable-templates). A variable can have the same name as its underlying template or be more specific, e.g. *variable template*: locationID, *variable*: patchLabelBETAFOR. For every column of your tabular data you have to define a variable. 
 
 ![Variables_VariableTemplates](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Variables_VariableTemplates.PNG)
 
@@ -76,7 +76,7 @@ A variable can be deleted from a structure by clicking on the trash button.
 
 If the *Optional* checkbox is selected, the variable/column of your tabular data can have empty entries.
 
-You can also define a placeholder for missing values. Their might be one by default, but you can adjust it and add more.
+You can also define a placeholder for missing values, e.g. 'NA'. Their might be one by default, but you can adjust it and add more.
 
 ![Define variables](https://github.com/BEXIS2/Documents/raw/master/Manuals/RPM/Images/missing_values.png) 
 
@@ -88,8 +88,6 @@ Every BETA-FOR Dataset should contain these two Variables:
 |----------------------	|-----------------------|-----------------------|-----------------------|---------------|
 |**patchLabelBETAFOR**	| locationID		| All BETA-FOR patch IDs | Link to the detailed geographic information in a separate Dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9). | U03EAB003 |
 |**treatmentPresent**	| treatmentPresent	| true, false		| Indicates if the BETA-FOR treatment (which is part of the PatchLabelBETAFOR) was already present when the data was collected. | true |
-
-Make sure that your dataset contains some date and time information (in ISO 8601 standard). 
 
 ### 2.2 Edit a Data Structure
 
@@ -125,7 +123,7 @@ Save the Excel Template to your preferred location on your computer.
 ### 2.5 Work with an Excel template
 An Excel template is an Excel file that includes the Data Structure information. There are macros that check if your filled in data match the defined Data Types. For example: If you enter "one" into a variable/column with data type *integer*, you will get an error.
 
-Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, choose the option "Enable content". 
+Usually, when you first open a template file, you get a security warning "macros have been disabled". In this case, click on "Weitere Informationen" and follow the instructions. 
 
 ![Makros aktivieren](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Create%20a%20Data%20Structure/Images/Makros_aktivieren.PNG)
 
@@ -191,7 +189,7 @@ Otherwise ...
 * No hyphen / dash
 * No special characters
 * Avoid abbreviations
-* If your Variable Template name consists of more than one word, combine it with CamelCase, e.g. Species detected -> "SpeciesDetected".
+* If your Variable Template name consists of more than one word, combine it with CamelCase, e.g. scientific name -> "scientificName".
 
 **Short Name**
 
