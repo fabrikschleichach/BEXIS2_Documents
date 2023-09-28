@@ -10,17 +10,18 @@
 	- [3.2 Basic](#32-basic)
 	- [3.3 Creators](#33-creators)
 	- [3.4 Titles](#34-titles)
-	- [3.5 Subjects](#35-subjects)
-	- [3.6 Contributors](#36-contributors)
-	- [3.7 Dates](#37-dates)
-	- [3.8 Alternate Identifiers](#38-alternate-identifiers)
-	- [3.9 Related Identifiers](#39-related-identifiers)
-	- [3.10 Formats](#310-formats)
-	- [3.11 Rights List](#311-rights-list)
-	- [3.12 Descriptions](#312-descriptions)
-	- [3.13 GeoLocations](#313-geolocations)
-	- [3.14 Funding References](#314-funding-references)
-	- [3.15 Related Items](#315-related-items)
+	- [3.5 Taxonomic Terms](#35-taxonomic-terms)
+  	- [3.6 Methods](#36-methods)
+	- [3.7 Contributors](#37-contributors)
+	- [3.8 Dates](#38-dates)
+	- [3.9 Alternate Identifiers](#39-alternate-identifiers)
+	- [3.10 Related Identifiers](#310-related-identifiers)
+	- [3.11 Formats](#311-formats)
+	- [3.12 Rights List](#312-rights-list)
+	- [3.13 Descriptions](#313-descriptions)
+	- [3.14 GeoLocations](#314-geolocations)
+	- [3.15 Funding References](#315-funding-references)
+	- [3.16 Related Items](#316-related-items)
 - [4 Upload data](#4-upload-data)
 	- [4.1 Upload File](#41-upload-file)
 	- [4.2 Push Big File](#42-push-big-file)
@@ -113,6 +114,7 @@ There are a few 🔴**Mandatory fields**, that must be filled out. The others ar
 | 🟣Publication Year 		| Enter the year, when you plan to publish the dataset, or leave the field empty. Format: YYYY .| 2025
 | 🔴**Resource Type** 		| Select a ![Darwin Core class label](https://docs.gbif.org/course-data-use/en/basis-of-record.html) as *Basis of Record*. | Human Observation |
 | 🟣@Resource type general 	| Select one of the following options: Audiovisual, ComputationalNotebook, Dataset, Image, Software, Sound, Text, Other. Default is **Dataset**. | Dataset |
+| 🟣Layer			| Were the measurements taken above ground or below ground? | above ground |
 | 🟣Language			| The Language of the (primary) data. | en 	|
 | Version 			| Will be set automatically. 	| 2		|
 
@@ -137,8 +139,10 @@ The form is repeatable, i.e. you can enter as many creators (e.g. PhDs, PIs) as 
 
 The title field is repeatable. 
 
-To make sure that same things have same naming, pick the Method/Device name from ![here](https://docs.google.com/document/d/1DKHSOQrK5LqxLlfZqJu-fhkgmu5ahpPzNj9slEb2f24/edit?usp=sharing). The bold one is the preferred name. 
-If your Method/Device is missing, add it to the list to make sure that others will reuse the term you picked. 
+Titles should have the following format: **Project_Subproject_Organism/Function_Method/Device_Year**
+
+To make sure that same things have same naming, pick the Method/Device name from the Methods drop-down list or from here ![here](https://docs.google.com/document/d/1DKHSOQrK5LqxLlfZqJu-fhkgmu5ahpPzNj9slEb2f24/edit?usp=sharing). 
+If your Method/Device is missing, please add it to the Google Docs list. 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
@@ -146,15 +150,24 @@ If your Method/Device is missing, add it to the list to make sure that others wi
 | @Title type			| Leave the field empty if there is only one (main) title. | |
 
 
-### 3.5 Subjects
+### 3.5 Taxonomic Terms
 
-The subject field is repeatable. 
+The Taxonomic term field is repeatable. 
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Subject			| Select one or more Taxonomic Term(s).| Aves	|
+| 🟣Taxonomic term		| Select one or more Taxonomic Term(s).| Fungi	|
 
-### 3.6 Contributors
+
+### 3.6 Methods
+
+The Method field is repeatable. 
+
+| Element / @Attribute Name 	| How to fill it		| Example 	|
+|-------------------------------|-------------------------------|---------------|
+| 🟣Method			| Select one or more Method(s).	| bat recorders	|
+
+### 3.7 Contributors
 
 Persons responsible for collecting, creating or otherwise contributing to the development of the dataset. All contributors have **read permission** on the dataset. 
 The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manager, TAs, Studentische Hilfskräfte, Praktiker, ...) as appropriate.
@@ -170,7 +183,7 @@ The form is repeatable, i.e. you can enter as many contributors (e.g. Site Manag
 | 🟣@Name identifier scheme       | The name of the identifier scheme. Default is **ORCID** | ORCID |
 | Affiliation 			| Will be set automatically. Format: University, Institute (e.g. University of Würzburg, Zoology III), or Institution (e.g. Nationalpark Bayerischer Wald).	| University of Würzburg, Zoology III |
 
-### 3.7 Dates 
+### 3.8 Dates 
 
 Important dates related to the (primary) data.
 
@@ -184,7 +197,7 @@ Important dates related to the (primary) data.
 | 🟣@Date type			| Select a date type from the drop-down list.   | Collected 	|
 
 
-### 3.8 Alternate Identifiers
+### 3.9 Alternate Identifiers
 
 There are two different use cases for the element *Alternate Identifiers*:
 
@@ -205,7 +218,7 @@ There are two different use cases for the element *Alternate Identifiers*:
 | 🟣@Alternate Identifier Type	| Fill in **DOI**.	| DOI |
    
 
-### 3.9 Related Identifiers
+### 3.10 Related Identifiers
 
 The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
 
@@ -219,14 +232,14 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 | 🟣@Related identifier type 	| Default is **URL**. 		| URL		|
 | 🟣@Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | IsSupplementedBy |
 
-### 3.10 Formats
+### 3.11 Formats
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | 🟣Format			| The file extension of your (primary) data. Select an entry from the drop-down list. | XLSX |
 
 
-### 3.11 Rights List
+### 3.12 Rights List
 
 Choose a ![Creative Commons](https://creativecommons.org/licenses/?lang=en) licence under which your dataset should be available after publication. If you want to use a licence that is not yet in the selection list, write an email to your data manager (betafor@uni-wuerzburg.de).
 
@@ -249,7 +262,7 @@ Here some information about the different Creative Commons licenses taken from t
 | CC BY-NC-ND  	| Attribution-NonCommercial-NoDerivs  	| This license is the most restrictive of the six main licenses, only allowing others to download your works and share them with others as long as they credit you, but they can’t change them in any way or use them commercially. |
 
 
-### 3.12 Descriptions
+### 3.13 Descriptions
 
 The field *Description* is repeatable. Please provide at least an **Abstract** (@DescriptionType="Abstract") and some information about the underlying **Methods** (@DescriptionType="Methods"). 
 
@@ -259,7 +272,7 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 | 🟣@Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
 
 
-### 3.13 GeoLocations
+### 3.14 GeoLocations
 
 The field *GeoLocation* is repeatable. Provide a spatial region or named place where the data was gathered or about which the data is focused.
 
@@ -280,7 +293,7 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 
 
 
-### 3.14 Funding References 
+### 3.15 Funding References 
 
 **!!! Due to software issues, please select the "@Funder identifier type" (= ROR) first !!!**
 
@@ -293,7 +306,7 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 | Award URI			| Will be set automatically. The URI of the grant. | https://gepris.dfg.de/gepris/projekt/459717468 |
 | 🟣Award title 		| Use an entry from autocomplete list. Fill in the first letter(s) of the project name. | BETA-FOR / SPZ | 
 
-### 3.15 Related Items
+### 3.16 Related Items
 
 If your data has been published in a journal, you can share this information by entering the following fields:
 
