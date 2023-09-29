@@ -191,6 +191,8 @@ Important dates related to the (primary) data.
 
 **Created**: When was the (tabular) data created? 
 
+**Updated**: When was the (primary) data updated?
+
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | 🟣Date				| Date or date range. Use one of the following formats: YYYY, YYYY-MM-DD, YYYY-MM-DDThh:mm:ssTZD. Date ranges should be formatted like this: 2023-07-01/2023-07-31.  | 2023-06-12 |
@@ -202,8 +204,8 @@ Important dates related to the (primary) data.
 There are two different use cases for the element *Alternate Identifiers*:
 
 1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS:
-*  **External storage location**, in case of large raw data 
-*  **Archive** (Archive server of University of Würzburg)
+*  **External storage location** (= NAS), in case of large raw data 
+*  **Archive** (= Archive server of University of Würzburg)
    
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
@@ -215,14 +217,14 @@ There are two different use cases for the element *Alternate Identifiers*:
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | 🟣Alternate identifier	| Enter the DOI here. 		| 10.58160/88 	|
-| 🟣@Alternate Identifier Type	| Fill in **DOI**.	| DOI |
+| 🟣@Alternate Identifier Type	| Fill in **DOI**.		| DOI |
    
 
 ### 3.10 Related Identifiers
 
 The field *Related Identifiers* should be used if there are related datasets INSIDE BEXIS2. If you want to state a relationship to an EXTERNAL publication, use the *Related Items* field. 
 
-To refer to the geographic information dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 9) use **IsSupplementedyBy** as @relationType.
+To refer to the geographic information dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 14) use **IsSupplementedyBy** as @relationType.
 
 Note: If you enter the field *Related Identifier*, a link is created in both directions, based on the current versions of the datasets.
 
@@ -230,13 +232,13 @@ Note: If you enter the field *Related Identifier*, a link is created in both dir
 |-------------------------------|-------------------------------|---------------|
 | 🟣Related identifier		| Use an entry from autocomplete list. Fill in the name of the related dataset. | BETA-FOR_SPZ_Patches_2022/2023 |
 | 🟣@Related identifier type 	| Default is **URL**. 		| URL		|
-| 🟣@Relation type			| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | IsSupplementedBy |
+| 🟣@Relation type		| Specifiy the type of relationship. The current dataset is the source, the related dataset the target. Example: If you want to specify the relationship to a dataset (B) from which the current dataset (A) was compiled, use (A) *Compiles* (B). For more information about the different relation types, visit: https://github.com/UB-LMU/DataCite_BestPracticeGuide/blob/4.4/bestpractice.md#relationtypes | IsSupplementedBy |
 
 ### 3.11 Formats
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Format			| The file extension of your (primary) data. Select an entry from the drop-down list. | XLSX |
+| 🟣Format			| The file extension of your (primary) data. Pick an entry from the drop-down list. | XLSX |
 
 
 ### 3.12 Rights List
@@ -269,7 +271,7 @@ The field *Description* is repeatable. Please provide at least an **Abstract** (
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | 🟣Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
-| 🟣@Description type		| Select **Abstract** for your abstract and **Methods** for your description of your methods. | Abstract / Methods |
+| 🟣@Description type		| Select **Abstract** for your abstract and **Methods** for the methods description. | Abstract / Methods |
 
 
 ### 3.14 GeoLocations
@@ -308,7 +310,7 @@ If your data covers all or a whole range of BETA-FOR patches, you can either ent
 
 ### 3.16 Related Items
 
-If your data has been published in a journal, you can share this information by entering the following fields:
+If your **data** has been published in a journal, you can share this information by entering the following fields:
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
