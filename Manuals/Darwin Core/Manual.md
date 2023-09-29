@@ -18,7 +18,7 @@
 
 ## 2 How to start?
 
-You have never heard of Darwin Core before? Or you don`t know anything about mappings? Do not worry, this presentation will give you a brief introduction to the classes and terms of Darwin Core and how to use them.
+You have never heard of Darwin Core before? Or you don`t know anything about mappings? Do not worry, this ![presentation](Darwin_Core_Workshop.pdf) will give you a brief introduction to the classes and terms of Darwin Core and how to use them.
 
 ![Go to top](#1-general-information)
    
