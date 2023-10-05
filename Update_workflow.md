@@ -49,7 +49,7 @@
 * Update Workspace: Version number in General\General.Settings.xml
 
 ## 4 Security settings
-* Set security settings (if it`s needed) for Data, Workspace and Site.
+* Set security settings (if it`s needed) for Data, Workspace and Site: IIS_IUSRS.
 
 ## 5 Modifications
 * Copy \Documents\BEXIS2_Images to \Site\Content\Images.
