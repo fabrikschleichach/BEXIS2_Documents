@@ -33,7 +33,8 @@
 * Copy *new* **Site**  
 * Take the *new* **Site/Web.config.sample** and fill in the following parameter:
 
-	* ```<add name="ApplicationServices" connectionString="{SERVER}" />```
+	* ```<exceptionless apiKey={apiKey} serverUrl="{serverUrl} />```
+  	* ```<add name="ApplicationServices" connectionString="{SERVER}" />```
 	* ```<add key="ApplicationName" value="BETA-FOR Data" />```
 	* ```<add key="CreateDatabase" value="false" />```
 	* ```<add key="WorkspacePath" value="{WORKSPACE}" />```
