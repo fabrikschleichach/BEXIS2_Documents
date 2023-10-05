@@ -46,7 +46,7 @@
 * Save the Site/Web.config.sample as Site/Web.config
 * Copy *current* **Data** 
 * Copy *current* **Workspace**  
-* Update Workspace (if it`s needed)
+* Update Workspace: Version number in General\General.Settings.xml
 
 ## 4 Security settings
 * Set security settings (if it`s needed) for Data, Workspace and Site.
