@@ -226,6 +226,8 @@ The field *Related Identifiers* should be used if there are related datasets INS
 
 To refer to the geographic information dataset (Title: BETA-FOR_SPZ_Patches_2022/2023; Dataset id: 14) use **IsSupplementedyBy** as @relationType.
 
+If you have a time series, use **IsContinuedBy** (if the data you upload is older than the linked one) or **Continues** (if the data you upload is newer than the linked one).
+
 Note: If you enter the field *Related Identifier*, a link is created in both directions, based on the current versions of the datasets.
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
