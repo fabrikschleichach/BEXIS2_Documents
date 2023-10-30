@@ -268,12 +268,15 @@ Here some information about the different Creative Commons licenses taken from t
 
 ### 3.13 Descriptions
 
-The field *Description* is repeatable. Please provide at least an **Abstract** (@DescriptionType="Abstract") and some information about the underlying **Methods** (@DescriptionType="Methods"). 
+The field *Description* is repeatable. You can provide...:
+* ... an **Abstract** (@DescriptionType="Abstract")
+* ... some information about the underlying **Methods** (@DescriptionType="Methods")
+* ... **Technical information** (e.g. model and version) about your recorders, software (like a readme.txt), loggers, etc. (@DescriptionType = "TechnicalInfo")
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
 | 🟣Description			| Enter some free text information. | This is my Abstract... (= Description Field No. 1) / These are my Methods... (= Description Field No. 2).|
-| 🟣@Description type		| Select **Abstract** for your abstract and **Methods** for the methods description. | Abstract / Methods |
+| 🟣@Description type		| Select **Abstract** for your abstract, **Methods** for the methods description and **TechnicalInfo** for information about your equipment or environment. | Abstract / Methods |
 
 
 ### 3.14 GeoLocations
