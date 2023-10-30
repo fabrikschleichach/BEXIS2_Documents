@@ -271,7 +271,7 @@ Here some information about the different Creative Commons licenses taken from t
 The field *Description* is repeatable. You can provide...:
 * ... an **Abstract** (@DescriptionType="Abstract")
 * ... some information about the underlying **Methods** (@DescriptionType="Methods")
-* ... **Technical information** (e.g. model and version) about your recorders, software (like a readme.txt), loggers, etc. (@DescriptionType = "TechnicalInfo")
+* ... **Technical Info** (e.g. model and version) about your recorders, software (like a readme.txt), loggers, etc. (@DescriptionType = "TechnicalInfo")
 
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
