@@ -4,8 +4,8 @@
 - [1 Overview](#1-overview)
 - [2 Unpublished Datasets](#2-unpublished-datasets)
 	- [2.1 Dataset permissions via metadata](#21-dataset-permissions-via-metadata)
-	- [2.2 Dataset Requests](#23-dataset-requests)
- 	- [2.3 Dataset Permissions set by the Data Manager](#22-dataset-permissions-set-by-the-data-manager)
+	- [2.2 Dataset Requests](#22-dataset-requests)
+ 	- [2.3 Dataset Permissions set by the Data Manager](#23-dataset-permissions-set-by-the-data-manager)
 - [3 Published Datasets](#3-published-datasets)
 
 <!-- /TOC -->
