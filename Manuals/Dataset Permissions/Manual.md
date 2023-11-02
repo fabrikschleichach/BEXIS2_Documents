@@ -59,7 +59,7 @@ There is also a list of all answered and pending requests related to your datase
 
 ### 2.3. Dataset Permissions set by the Data Manager
 
-If you want to grant read permission for your dataset to an entire group, you can also send an eMail to your data manager (betafor@uni-wuerzburg.de). Your eMail should contain at least the following information:
+If you want to e.g. grant read permission for your dataset to an entire group, you can also send an eMail to your data manager (betafor@uni-wuerzburg.de). Your eMail should contain at least the following information:
 
 * Dataset ID
 * User / Group
