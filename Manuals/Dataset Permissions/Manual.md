@@ -55,6 +55,8 @@ In your **Dashboard** you will find a list of all your pending and answered data
 
 There is also a list of all answered and pending requests related to your datasets. You can accept (hook) or reject (minus) pending requests. The requesting person will be automatically informed about your decision via email. 
 
+![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/decision.png)
+
 ### 2.3. Dataset Permissions set by the Data Manager
 
 If you want to grant read permission for your dataset to an entire group, you can also send an eMail to your data manager (betafor@uni-wuerzburg.de). Your eMail should contain at least the following information:
@@ -62,9 +64,7 @@ If you want to grant read permission for your dataset to an entire group, you ca
 * Dataset ID
 * User / Group
 * Type of Permission (Read, Write, Delete, Grant)
-  
 
-![image info](https://github.com/BEXIS2/Documents/raw/master/Manuals/DDM/Images/decision.png)
 
 ## 3 Published Datasets
 
