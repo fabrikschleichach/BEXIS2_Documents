@@ -59,11 +59,23 @@ There is also a list of all answered and pending requests related to your datase
 
 ### 2.3. Dataset Permissions set by the Data Manager
 
-If you want to e.g. grant read permission for your dataset to an entire group, you can also send an eMail to your data manager (betafor@uni-wuerzburg.de). Your eMail should contain at least the following information:
 
-* Dataset ID
-* User / Group
-* Type of Permission (Read, Write, Delete, Grant)
+### 2.2 Dataset permissions via menu
+
+Select the _Dashboard_ menu and click on _My Datasets_. 
+
+![dashboard](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Dataset%20Permissions/Images/dashboard.png)
+
+Now you can select a Dataset from the list and and click on the _eye_ icon.
+
+![My_Datasets](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Dataset%20Permissions/Images/My_Datasets.PNG)
+
+In the Dataset Details View open the *Dataset Permissions* tab. 
+
+![Dataset_Permissions](https://github.com/fabrikschleichach/BEXIS2_Documents/blob/master/Manuals/Dataset%20Permissions/Images/Dataset_Permissions.PNG)
+
+You can grant permissions on the dataset to another user by selecting the appropriate checkboxes.  
+If you want to set permissions for all project members, set permissions for the corresponding *Group* (e.g. BETA-FOR) and not for each individual *User*. 
 
 
 ## 3 Published Datasets
