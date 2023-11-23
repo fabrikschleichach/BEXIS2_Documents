@@ -206,7 +206,7 @@ There are two different use cases for the element *Alternate Identifiers*:
 1) Use the element *Alternate Identifiers* for storage locations outside BEXIS:
 *  **External storage location** (= NAS)
 *  **Archive** (= Archive server of University of Würzburg)
-*  **Hard drive** 
+*  **Hard drive** (= Working copy on an external hard drive, in cases of large raw data)
    
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
