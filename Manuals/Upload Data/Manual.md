@@ -203,13 +203,14 @@ Important dates related to the (primary) data.
 
 There are two different use cases for the element *Alternate Identifiers*:
 
-1) Use the element *Alternate Identifiers* if your (primary) data is stored outside BEXIS:
-*  **External storage location** (= NAS), in case of large raw data 
+1) Use the element *Alternate Identifiers* for storage locations outside BEXIS:
+*  **External storage location** (= NAS)
 *  **Archive** (= Archive server of University of Würzburg)
+*  **Hard drive** 
    
 | Element / @Attribute Name 	| How to fill it		| Example 	|
 |-------------------------------|-------------------------------|---------------|
-| 🟣Alternate identifier		| Enter the storage location of the (primary) data here. | |
+| 🟣Alternate identifier		| Enter the storage location of the (primary) data here. | archiv.rz.uni-wuerzburg.de/archiv/2033/fkt76de/Ecuador/Ecuador_2022/Labels/ |
 | 🟣@Alternate Identifier Type	| Fill in **External storage location**.	| External storage location |
 
 2) Use the element *Alternate Identifiers* if your dataset has a **DOI**.
