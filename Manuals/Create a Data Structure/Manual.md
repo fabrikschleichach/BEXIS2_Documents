@@ -184,7 +184,7 @@ As most of our Variable Templates are based on Darwin Core Terms, it would be gr
 Otherwise ...
 
 * Choose an English name
-* Starting with a capital letter
+* Starting with a lower case letter
 * No spaces
 * No hyphen / dash
 * No special characters
