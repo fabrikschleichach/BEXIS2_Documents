@@ -52,7 +52,7 @@
 * Set security settings (if it`s needed) for Data, Workspace and Site: IIS_IUSRS.
 
 ## 5 Modifications
-* Copy \Documents\BEXIS2_Images to \Site\Content\Images.
+* Copy \Documents\BEXIS2_Images\* to \Site\Content\Images.
 
 ## 6 Testing
 * Start the Site
